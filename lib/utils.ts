@@ -1,8 +1,9 @@
 import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 
-// Simple class name merger (similar to clsx)
+// Class name merger with Tailwind deduplication
 export function cn(...inputs: ClassValue[]) {
-  return clsx(inputs);
+  return twMerge(clsx(inputs));
 }
 
 // Format phone number for display

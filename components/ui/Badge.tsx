@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 interface BadgeProps {
-  variant?: "heritage" | "red" | "muted";
+  variant?: "heritage" | "red" | "muted" | "light";
   className?: string;
   children: React.ReactNode;
 }
@@ -11,6 +11,7 @@ export function Badge({ variant = "heritage", className, children }: BadgeProps)
     heritage: "text-heritage-blue bg-heritage-blue/10 border-heritage-blue",
     red: "text-best-red bg-best-red/10 border-best-red",
     muted: "text-muted bg-muted/10 border-muted",
+    light: "text-clean-white bg-clean-white/15 border-clean-white/60",
   };
   
   return (
@@ -27,9 +28,14 @@ export function Badge({ variant = "heritage", className, children }: BadgeProps)
 }
 
 // Heritage badge specifically for "Since 1910"
-export function HeritageBadge({ className }: { className?: string }) {
+interface HeritageBadgeProps {
+  className?: string;
+  variant?: "heritage" | "light";
+}
+
+export function HeritageBadge({ className, variant = "heritage" }: HeritageBadgeProps) {
   return (
-    <Badge variant="heritage" className={className}>
+    <Badge variant={variant} className={className}>
       <span className="mr-1">Est.</span> 1910
     </Badge>
   );

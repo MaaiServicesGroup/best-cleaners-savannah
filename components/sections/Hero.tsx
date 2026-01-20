@@ -43,7 +43,7 @@ export function Hero({
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-charcoal/60" />
+          <div className="absolute inset-0 bg-charcoal/70" />
         </div>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-warm-cream via-clean-white to-warm-cream">
@@ -60,7 +60,7 @@ export function Hero({
         <div className={`${isHome ? "max-w-3xl" : "max-w-2xl"} ${backgroundImage ? "text-clean-white" : ""}`}>
           {showBadge && (
             <div className="mb-6 animate-fade-in stagger-1">
-              <HeritageBadge />
+              <HeritageBadge variant={backgroundImage ? "light" : "heritage"} />
             </div>
           )}
 

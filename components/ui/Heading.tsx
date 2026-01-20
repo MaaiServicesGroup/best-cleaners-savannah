@@ -39,7 +39,7 @@ export function Heading({
   return (
     <Component
       className={cn(
-        "font-display font-bold text-charcoal leading-tight",
+        "font-display font-bold leading-tight text-charcoal",
         sizeClass,
         balance && "text-balance",
         className
@@ -60,7 +60,7 @@ export function Subheading({ className, children }: SubheadingProps) {
   return (
     <p
       className={cn(
-        "font-body font-medium text-muted text-lg md:text-xl",
+        "font-body font-medium text-lg md:text-xl text-muted",
         className
       )}
     >
