@@ -11,6 +11,8 @@ const pageData = {
   neighborhood: "Historic District",
   pageType: "district" as const,
   description: "Professional dry cleaning and laundry services for residents, businesses, and visitors in Savannah's beloved Historic District. We've been caring for fine garments in this area since we first opened our doors in 1910.",
+  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/historic district savannah.jpg",
+  heroImageAlt: "Beautiful Historic District in Savannah, Georgia",
   proximityStatement: "Our Waters Avenue location is just a short drive from the Historic District, making it easy to drop off your garments on your way to work or during lunch. We're also accessible via Abercorn Street from the southern parts of downtown.",
   content: [
     "The Historic District is the heart of Savannah, where elegant architecture meets Southern charm. Whether you're a resident maintaining a professional wardrobe, a business owner with staff uniforms, or an innkeeper with guest linens, Best Cleaners understands the unique needs of this historic neighborhood.",

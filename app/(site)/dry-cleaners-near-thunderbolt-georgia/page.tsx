@@ -11,6 +11,8 @@ const pageData = {
   neighborhood: "Thunderbolt",
   pageType: "near-city" as const,
   description: "Quality dry cleaning services for Thunderbolt residents. Our Waters Avenue location provides easy access for the Thunderbolt community with the quality and expertise Best Cleaners is known for.",
+  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/savannah river.jpg",
+  heroImageAlt: "Savannah River waterfront view",
   proximityStatement: "Thunderbolt residents are just 5-10 minutes from our Waters Avenue location. Head down Victory Drive and you're practically at our door—making us one of the most convenient options for the Thunderbolt area.",
   content: [
     "Thunderbolt's maritime heritage and tight-knit community deserve a dry cleaner that understands small-town values backed by big-city expertise. Best Cleaners has been serving the greater Savannah area since 1910, and we're proud to count Thunderbolt families among our loyal customers.",

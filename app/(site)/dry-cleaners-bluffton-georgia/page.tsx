@@ -11,6 +11,8 @@ const pageData = {
   neighborhood: "Bluffton Area",
   pageType: "near-city" as const,
   description: "Quality dry cleaning services accessible from Bluffton and the surrounding Lowcountry area. While we're based in Savannah, many Bluffton residents make us their preferred dry cleaner.",
+  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/beautiful savannah.jpg",
+  heroImageAlt: "Beautiful scenery near Savannah",
   proximityStatement: "For Bluffton residents who frequently travel to Savannah for work, shopping, or entertainment, our two locations offer convenient stopping points. Our Abercorn Street store is particularly accessible from Highway 204.",
   content: [
     "Bluffton's growth has brought many new residents to the Lowcountry, but quality dry cleaning options in newer areas can be limited. Many Bluffton residents who work or shop in Savannah have discovered Best Cleaners and make us a regular stop on their trips.",

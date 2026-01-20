@@ -93,6 +93,7 @@ export default function HomePage() {
         }}
         showBadge={true}
         variant="home"
+        backgroundImage="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaned suits.jpg"
       />
 
       {/* Why Choose Us */}

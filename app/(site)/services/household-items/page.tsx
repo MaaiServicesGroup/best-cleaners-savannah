@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card } from "@/components/ui";
@@ -52,28 +53,42 @@ export default function HouseholdItemsPage() {
                 </p>
               </div>
             </div>
-            <div>
-              <div className="bg-warm-cream border border-border p-8">
-                <h3 className="font-display text-xl font-semibold text-charcoal mb-4">
-                  What We Clean
-                </h3>
-                <ul className="grid grid-cols-2 gap-2">
-                  {items.map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-charcoal">
-                      <svg className="w-4 h-4 text-heritage-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      <span className="text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <div className="relative aspect-[4/3] overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/spring cleaning blankets.jpg"
+                alt="Fresh clean blankets and comforters"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </Container>
       </Section>
 
+      {/* What We Clean */}
       <Section bg="cream">
+        <Container>
+          <div className="text-center mb-12">
+            <Heading as="h2" className="mb-4">
+              What We Clean
+            </Heading>
+          </div>
+          <div className="max-w-3xl mx-auto bg-clean-white border border-border p-8">
+            <ul className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {items.map((item) => (
+                <li key={item} className="flex items-center gap-2 text-charcoal">
+                  <svg className="w-4 h-4 text-heritage-blue shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-sm">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Container>
+      </Section>
+
+      <Section bg="white">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>

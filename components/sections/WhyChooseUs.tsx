@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container, Section } from "@/components/layout";
 import { Heading, Subheading } from "@/components/ui";
 
@@ -41,12 +42,20 @@ export function WhyChooseUs() {
               Since 1910, we&apos;ve combined time-tested techniques with modern innovations 
               to deliver the finest dry cleaning and laundry services in Savannah.
             </Subheading>
-            <p className="text-muted leading-relaxed">
+            <p className="text-muted leading-relaxed mb-8">
               Our family has been caring for Savannah&apos;s finest garments for over four generations. 
               We understand that every piece of clothing tells a story—whether it&apos;s a cherished 
               wedding dress, a trusted work suit, or your favorite everyday shirt. That&apos;s why we 
               treat every garment with the respect and attention it deserves.
             </p>
+            <div className="relative aspect-[16/9] overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaning equipment.jpg"
+                alt="Professional dry cleaning equipment at Best Cleaners"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
 
           {/* Stats Grid */}

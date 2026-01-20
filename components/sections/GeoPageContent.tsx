@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button, HeritageBadge } from "@/components/ui";
 import { CTABanner } from "./CTABanner";
@@ -11,6 +12,8 @@ interface GeoPageData {
   proximityStatement: string;
   content: string[];
   landmarks?: string[];
+  heroImage?: string;
+  heroImageAlt?: string;
   relatedAreas: {
     name: string;
     href: string;
@@ -36,14 +39,26 @@ export function GeoPageContent({ data }: GeoPageContentProps) {
       {/* Hero */}
       <section className="bg-clean-white border-b border-border py-12 md:py-16">
         <Container>
-          <div className="max-w-3xl">
-            <HeritageBadge className="mb-4" />
-            <Heading as="h1" size="lg" className="mb-4">
-              {data.title}
-            </Heading>
-            <p className="text-muted text-lg">
-              {data.description}
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <HeritageBadge className="mb-4" />
+              <Heading as="h1" size="lg" className="mb-4">
+                {data.title}
+              </Heading>
+              <p className="text-muted text-lg">
+                {data.description}
+              </p>
+            </div>
+            {data.heroImage && (
+              <div className="relative aspect-[4/3] overflow-hidden border border-border">
+                <Image
+                  src={data.heroImage}
+                  alt={data.heroImageAlt || `${data.neighborhood} area in Savannah`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
           </div>
         </Container>
       </section>

@@ -11,6 +11,8 @@ const pageData = {
   neighborhood: "Midtown Savannah",
   pageType: "neighborhood" as const,
   description: "Quality dry cleaning services for Midtown Savannah. Whether you work in the medical district, shop at the mall, or call Midtown home, we're conveniently located to serve you.",
+  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/downtown savannah.jpg",
+  heroImageAlt: "Downtown Savannah cityscape",
   proximityStatement: "Our Abercorn Street location sits right in the heart of Midtown, making us incredibly convenient for anyone in this bustling area of Savannah.",
   content: [
     "Midtown Savannah is a hub of activity—home to Memorial Health, St. Joseph's Hospital, numerous medical offices, shopping centers, and thriving neighborhoods. Best Cleaners has been serving this dynamic area since long before it developed into the bustling district it is today.",

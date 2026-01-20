@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button } from "@/components/ui";
@@ -147,9 +148,44 @@ export default function LocationsPage() {
         </Container>
       </Section>
 
-      {/* Service Areas */}
+      {/* Savannah Image Banner */}
       <Section bg="cream">
         <Container>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div className="relative aspect-square overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/river street.jpg"
+                alt="River Street, Savannah"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/forsyth fountain.jpg"
+                alt="Forsyth Fountain, Savannah"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/savannah trolly.jpg"
+                alt="Savannah Trolley"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative aspect-square overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/the basilica savannah.jpg"
+                alt="The Basilica in Savannah"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
           <div className="text-center mb-12">
             <Heading as="h2" className="mb-4">
               Areas We Serve

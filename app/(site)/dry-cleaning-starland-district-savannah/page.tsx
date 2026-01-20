@@ -11,6 +11,8 @@ const pageData = {
   neighborhood: "Starland District",
   pageType: "district" as const,
   description: "Expert dry cleaning services for the vibrant Starland District. We understand the creative community's unique needs and provide quality care for everything from vintage finds to professional attire.",
+  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/savannah spanish moss.jpg",
+  heroImageAlt: "Beautiful Savannah street with Spanish moss",
   proximityStatement: "The Starland District is conveniently located between our two stores. Our Waters Avenue location is just north, while Abercorn Street is a quick drive south—perfect for stopping by during your Starland adventures.",
   content: [
     "The Starland District has transformed into one of Savannah's most exciting neighborhoods, blending artistic energy with local businesses and a strong residential community. Best Cleaners is proud to serve this creative hub with the same quality we've provided Savannah for over a century.",

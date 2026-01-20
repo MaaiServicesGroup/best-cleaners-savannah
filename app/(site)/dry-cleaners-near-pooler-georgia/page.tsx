@@ -11,6 +11,8 @@ const pageData = {
   neighborhood: "Pooler",
   pageType: "near-city" as const,
   description: "Looking for quality dry cleaning near Pooler? While we're based in Savannah, many Pooler residents make the short trip to Best Cleaners for our exceptional service and over a century of expertise.",
+  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/savannahGA.jpg",
+  heroImageAlt: "Beautiful Savannah, Georgia scenery",
   proximityStatement: "Pooler residents can easily reach our Waters Avenue location via I-16, typically just a 15-20 minute drive. Many customers stop by on their way to or from Savannah.",
   content: [
     "Pooler has grown tremendously over the years, but quality dry cleaning options can still be limited in newer communities. That's why many Pooler residents choose to make the short trip to Best Cleaners in Savannah, where they know they'll receive exceptional service backed by over 110 years of experience.",

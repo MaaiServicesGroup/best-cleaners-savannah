@@ -11,6 +11,8 @@ const pageData = {
   neighborhood: "Ardsley Park",
   pageType: "neighborhood" as const,
   description: "Dedicated dry cleaning services for the Ardsley Park neighborhood. Known for its beautiful homes and tree-canopied streets, Ardsley Park deserves garment care that matches its elegance.",
+  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/downtown savannah park.jpg",
+  heroImageAlt: "Beautiful park in Savannah with tree-lined paths",
   proximityStatement: "Ardsley Park residents enjoy quick access to both of our locations. Our Abercorn Street store is particularly convenient, located just minutes south along the Abercorn corridor.",
   content: [
     "Ardsley Park is one of Savannah's most sought-after neighborhoods, and for good reason. The stately homes, manicured gardens, and strong sense of community make it a wonderful place to live. Best Cleaners has been serving Ardsley Park families for generations, and we understand the neighborhood's appreciation for quality.",

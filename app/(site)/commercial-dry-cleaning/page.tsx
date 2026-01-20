@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button } from "@/components/ui";
@@ -13,32 +14,38 @@ const industries = [
   {
     title: "Restaurants & Hospitality",
     description: "Tablecloths, napkins, chef coats, and server uniforms cleaned to the highest standards.",
-    icon: "🍽️",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/restaurant.jpg",
+    imageAlt: "Restaurant dining setting",
   },
   {
     title: "Hotels & Lodging",
     description: "Linens, towels, staff uniforms, and guest laundry handled with care and efficiency.",
-    icon: "🏨",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/wedding table setting.jpg",
+    imageAlt: "Elegant table setting with clean linens",
   },
   {
     title: "Medical & Healthcare",
     description: "Lab coats, scrubs, and medical textiles cleaned according to strict hygiene standards.",
-    icon: "🏥",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/clean suit.jpg",
+    imageAlt: "Clean professional attire",
   },
   {
     title: "Spas & Salons",
     description: "Robes, towels, and capes that stay fresh and presentable for your clients.",
-    icon: "💆",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/special fabrics.jpg",
+    imageAlt: "Special fabric care",
   },
   {
     title: "Corporate Offices",
     description: "Executive attire, company uniforms, and office textiles professionally maintained.",
-    icon: "🏢",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/mens uniform shirts.jpg",
+    imageAlt: "Professional uniform shirts",
   },
   {
-    title: "Retail Establishments",
-    description: "Staff uniforms and display textiles that represent your brand at its best.",
-    icon: "🛍️",
+    title: "Schools & Organizations",
+    description: "Band uniforms, sports attire, and event clothing for schools and community groups.",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/school band.jpg",
+    imageAlt: "School band uniforms",
   },
 ];
 
@@ -91,13 +98,22 @@ export default function CommercialDryCleaningPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {industries.map((industry) => (
-              <Card key={industry.title}>
-                <span className="text-4xl mb-4 block">{industry.icon}</span>
-                <h3 className="font-display text-xl font-semibold text-charcoal mb-2">
-                  {industry.title}
-                </h3>
-                <p className="text-muted text-sm">{industry.description}</p>
-              </Card>
+              <div key={industry.title} className="bg-clean-white border border-border overflow-hidden">
+                <div className="relative aspect-[16/9]">
+                  <Image
+                    src={industry.image}
+                    alt={industry.imageAlt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-display text-xl font-semibold text-charcoal mb-2">
+                    {industry.title}
+                  </h3>
+                  <p className="text-muted text-sm">{industry.description}</p>
+                </div>
+              </div>
             ))}
           </div>
         </Container>

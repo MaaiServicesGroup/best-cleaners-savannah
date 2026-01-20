@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button } from "@/components/ui";
@@ -41,33 +42,88 @@ export default function UniformCleaningPage() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="text-center p-6">
-                <div className="text-3xl mb-2">🏥</div>
-                <h3 className="font-semibold text-charcoal">Medical</h3>
-                <p className="text-sm text-muted">Scrubs, lab coats</p>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="text-3xl mb-2">🍽️</div>
-                <h3 className="font-semibold text-charcoal">Restaurant</h3>
-                <p className="text-sm text-muted">Chef coats, aprons</p>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="text-3xl mb-2">🏢</div>
-                <h3 className="font-semibold text-charcoal">Corporate</h3>
-                <p className="text-sm text-muted">Branded uniforms</p>
-              </Card>
-              <Card className="text-center p-6">
-                <div className="text-3xl mb-2">💆</div>
-                <h3 className="font-semibold text-charcoal">Salon/Spa</h3>
-                <p className="text-sm text-muted">Tunics, smocks</p>
-              </Card>
+            <div className="relative aspect-[4/3] overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/mens uniform shirts.jpg"
+                alt="Professional uniform shirts cleaned and pressed"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </Container>
       </Section>
 
+      {/* Industries We Serve */}
       <Section bg="cream">
+        <Container>
+          <div className="text-center mb-12">
+            <Heading as="h2" className="mb-4">
+              Industries We Serve
+            </Heading>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-clean-white border border-border overflow-hidden">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/restaurant.jpg"
+                  alt="Restaurant uniforms"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="font-semibold text-charcoal">Restaurant</h3>
+                <p className="text-sm text-muted">Chef coats, aprons</p>
+              </div>
+            </div>
+            <div className="bg-clean-white border border-border overflow-hidden">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/military uniform.jpg"
+                  alt="Military uniforms"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="font-semibold text-charcoal">Military</h3>
+                <p className="text-sm text-muted">Dress uniforms, BDUs</p>
+              </div>
+            </div>
+            <div className="bg-clean-white border border-border overflow-hidden">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/school band.jpg"
+                  alt="School band uniforms"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="font-semibold text-charcoal">School Bands</h3>
+                <p className="text-sm text-muted">Band uniforms, capes</p>
+              </div>
+            </div>
+            <div className="bg-clean-white border border-border overflow-hidden">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/clean suit.jpg"
+                  alt="Corporate uniforms"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="font-semibold text-charcoal">Corporate</h3>
+                <p className="text-sm text-muted">Branded uniforms</p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section bg="white">
         <Container size="narrow">
           <div className="text-center">
             <Heading as="h2" size="md" className="mb-4">

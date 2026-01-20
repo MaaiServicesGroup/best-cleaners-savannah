@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button } from "@/components/ui";
@@ -63,21 +64,31 @@ export default function DryCLeaningPage() {
       {/* Overview */}
       <Section bg="white">
         <Container>
-          <div className="max-w-3xl">
-            <Heading as="h2" className="mb-6">
-              What is Dry Cleaning?
-            </Heading>
-            <div className="prose text-muted">
-              <p>
-                Dry cleaning is a professional garment cleaning process that uses specialized 
-                solvents instead of water. This method is essential for fabrics that would be 
-                damaged by water, including silk, wool, cashmere, and many synthetic blends.
-              </p>
-              <p>
-                At Best Cleaners, we've perfected our dry cleaning process over four generations. 
-                We combine traditional craftsmanship with modern, eco-friendly methods to deliver 
-                exceptional results that protect your garments and the environment.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Heading as="h2" className="mb-6">
+                What is Dry Cleaning?
+              </Heading>
+              <div className="prose text-muted">
+                <p>
+                  Dry cleaning is a professional garment cleaning process that uses specialized 
+                  solvents instead of water. This method is essential for fabrics that would be 
+                  damaged by water, including silk, wool, cashmere, and many synthetic blends.
+                </p>
+                <p>
+                  At Best Cleaners, we've perfected our dry cleaning process over four generations. 
+                  We combine traditional craftsmanship with modern, eco-friendly methods to deliver 
+                  exceptional results that protect your garments and the environment.
+                </p>
+              </div>
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaning clothes on rack.jpg"
+                alt="Professional dry cleaning - freshly cleaned clothes on a rack"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </Container>
@@ -107,17 +118,27 @@ export default function DryCLeaningPage() {
                 ))}
               </div>
             </div>
-            <div className="bg-clean-white border border-border p-8">
-              <h3 className="font-display text-xl font-semibold text-charcoal mb-4">
-                Not Sure If Your Item Needs Dry Cleaning?
-              </h3>
-              <p className="text-muted mb-6">
-                Bring it in and we'll take a look. We're always happy to advise on the best 
-                cleaning method for any garment—there's no obligation.
-              </p>
-              <Button href="/contact-best-dry-cleaners/" variant="outline">
-                Ask Us
-              </Button>
+            <div className="space-y-6">
+              <div className="relative aspect-[4/3] overflow-hidden border border-border">
+                <Image
+                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/man in clean suit.jpg"
+                  alt="Man wearing a professionally dry cleaned suit"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="bg-clean-white border border-border p-6">
+                <h3 className="font-display text-lg font-semibold text-charcoal mb-3">
+                  Not Sure If Your Item Needs Dry Cleaning?
+                </h3>
+                <p className="text-muted mb-4 text-sm">
+                  Bring it in and we'll take a look. We're always happy to advise on the best 
+                  cleaning method for any garment—there's no obligation.
+                </p>
+                <Button href="/contact-best-dry-cleaners/" variant="outline" size="sm">
+                  Ask Us
+                </Button>
+              </div>
             </div>
           </div>
         </Container>
@@ -126,13 +147,25 @@ export default function DryCLeaningPage() {
       {/* Process */}
       <Section bg="white">
         <Container>
-          <div className="text-center mb-12">
-            <Heading as="h2" className="mb-4">
-              Our Dry Cleaning Process
-            </Heading>
-            <p className="text-muted max-w-2xl mx-auto">
-              Every garment goes through our careful, multi-step process to ensure the best results.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
+            <div className="lg:col-span-2">
+              <Heading as="h2" className="mb-4">
+                Our Dry Cleaning Process
+              </Heading>
+              <p className="text-muted">
+                Every garment goes through our careful, multi-step process to ensure the best results. 
+                Our experienced team combines time-tested techniques with modern equipment to deliver 
+                exceptional care for your clothing.
+              </p>
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden border border-border">
+              <Image
+                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/expert process.jpg"
+                alt="Expert dry cleaning process in action"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
@@ -155,34 +188,69 @@ export default function DryCLeaningPage() {
       {/* Why Choose Us */}
       <Section bg="cream">
         <Container>
+          <div className="text-center mb-12">
+            <Heading as="h2" className="mb-4">
+              Why Choose Best Cleaners
+            </Heading>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
-              <h3 className="font-display text-xl font-semibold text-charcoal mb-3">
-                110+ Years Experience
-              </h3>
-              <p className="text-muted">
-                We've been dry cleaning in Savannah since 1910. That experience shows in 
-                the quality of our work and our ability to handle any garment.
-              </p>
-            </Card>
-            <Card>
-              <h3 className="font-display text-xl font-semibold text-charcoal mb-3">
-                Eco-Friendly Methods
-              </h3>
-              <p className="text-muted">
-                We use modern, environmentally responsible solvents that are gentle on 
-                your clothes and the planet, without sacrificing cleaning power.
-              </p>
-            </Card>
-            <Card>
-              <h3 className="font-display text-xl font-semibold text-charcoal mb-3">
-                Expert Finishing
-              </h3>
-              <p className="text-muted">
-                Cleaning is only half the job. Our skilled pressers bring garments back 
-                to life with detailed pressing that makes everything look brand new.
-              </p>
-            </Card>
+            <div className="bg-clean-white border border-border overflow-hidden">
+              <div className="relative aspect-[3/2]">
+                <Image
+                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaning equipment.jpg"
+                  alt="Professional dry cleaning equipment"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-xl font-semibold text-charcoal mb-3">
+                  110+ Years Experience
+                </h3>
+                <p className="text-muted">
+                  We've been dry cleaning in Savannah since 1910. That experience shows in 
+                  the quality of our work and our ability to handle any garment.
+                </p>
+              </div>
+            </div>
+            <div className="bg-clean-white border border-border overflow-hidden">
+              <div className="relative aspect-[3/2]">
+                <Image
+                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/special fabrics.jpg"
+                  alt="Special fabric care"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-xl font-semibold text-charcoal mb-3">
+                  Eco-Friendly Methods
+                </h3>
+                <p className="text-muted">
+                  We use modern, environmentally responsible solvents that are gentle on 
+                  your clothes and the planet, without sacrificing cleaning power.
+                </p>
+              </div>
+            </div>
+            <div className="bg-clean-white border border-border overflow-hidden">
+              <div className="relative aspect-[3/2]">
+                <Image
+                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/expert pressing.jpg"
+                  alt="Expert garment pressing"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="font-display text-xl font-semibold text-charcoal mb-3">
+                  Expert Finishing
+                </h3>
+                <p className="text-muted">
+                  Cleaning is only half the job. Our skilled pressers bring garments back 
+                  to life with detailed pressing that makes everything look brand new.
+                </p>
+              </div>
+            </div>
           </div>
         </Container>
       </Section>

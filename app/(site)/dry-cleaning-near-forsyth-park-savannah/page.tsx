@@ -11,6 +11,8 @@ const pageData = {
   neighborhood: "Forsyth Park Area",
   pageType: "neighborhood" as const,
   description: "Convenient dry cleaning services for residents and workers near iconic Forsyth Park. From the elegant homes surrounding the park to the businesses along Bull Street, we serve the entire area.",
+  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/forsyth fountain.jpg",
+  heroImageAlt: "Iconic Forsyth Park Fountain in Savannah",
   proximityStatement: "The Forsyth Park area is easily accessible from both of our locations. Head north on Bull Street to reach our Waters Avenue store, or south on Abercorn for our second location—both just minutes away.",
   content: [
     "Forsyth Park is the heart of historic Savannah—a gathering place for joggers, families, tourists, and locals alike. The neighborhoods surrounding the park are among the city's most desirable, home to beautiful historic properties and a community that appreciates quality in all things.",
