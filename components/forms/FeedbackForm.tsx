@@ -38,8 +38,8 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
 
   if (status === "success" && feedbackType === "positive") {
     return (
-      <div className="bg-heritage-blue/10 border border-heritage-blue p-8 text-center">
-        <svg className="w-12 h-12 text-heritage-blue mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="bg-charcoal/5 border border-charcoal/30 p-8 text-center">
+        <svg className="w-12 h-12 text-charcoal mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
         <h3 className="font-display text-xl font-semibold text-charcoal mb-2">Thank You!</h3>
@@ -72,8 +72,8 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
 
   if (status === "success" && feedbackType === "improvement") {
     return (
-      <div className="bg-heritage-blue/10 border border-heritage-blue p-8 text-center">
-        <svg className="w-12 h-12 text-heritage-blue mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="bg-charcoal/5 border border-charcoal/30 p-8 text-center">
+        <svg className="w-12 h-12 text-charcoal mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h3 className="font-display text-xl font-semibold text-charcoal mb-2">Feedback Received</h3>
@@ -97,7 +97,7 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
               value="positive"
               required
               onChange={() => setFeedbackType("positive")}
-              className="w-4 h-4 text-heritage-blue"
+              className="w-4 h-4 text-charcoal"
             />
             <span>Positive</span>
           </label>
@@ -108,7 +108,7 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
               value="improvement"
               required
               onChange={() => setFeedbackType("improvement")}
-              className="w-4 h-4 text-heritage-blue"
+              className="w-4 h-4 text-charcoal"
             />
             <span>Needs Improvement</span>
           </label>

@@ -38,8 +38,8 @@ export function ContactForm({ formspreeId = "placeholder" }: ContactFormProps) {
 
   if (status === "success") {
     return (
-      <div className="bg-heritage-blue/10 border border-heritage-blue p-8 text-center">
-        <svg className="w-12 h-12 text-heritage-blue mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="bg-charcoal/5 border border-charcoal/30 p-8 text-center">
+        <svg className="w-12 h-12 text-charcoal mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h3 className="font-display text-xl font-semibold text-charcoal mb-2">Message Sent!</h3>

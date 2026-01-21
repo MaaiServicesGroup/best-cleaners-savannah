@@ -43,10 +43,8 @@ export function Hero({
             className="object-cover"
             priority
           />
-          {/* Strong overlay for guaranteed text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/85 to-charcoal/75" />
-          {/* Additional subtle vignette for depth */}
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-charcoal/20" />
+          {/* Dark overlay for guaranteed text readability */}
+          <div className="absolute inset-0 bg-black/70" />
         </div>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-warm-cream via-clean-white to-warm-cream">
@@ -60,7 +58,7 @@ export function Hero({
       )}
 
       <Container className="relative z-10">
-        <div className={`${isHome ? "max-w-3xl" : "max-w-2xl"} ${backgroundImage ? "text-clean-white" : ""}`}>
+        <div className={`${isHome ? "max-w-3xl" : "max-w-2xl"}`}>
           {showBadge && (
             <div className="mb-6 animate-fade-in stagger-1">
               <HeritageBadge variant={backgroundImage ? "light" : "heritage"} />
@@ -68,23 +66,28 @@ export function Hero({
           )}
 
           {subtitle && (
-            <p className={`text-sm uppercase tracking-widest font-semibold mb-4 animate-fade-in stagger-1 ${backgroundImage ? "text-clean-white/80" : "text-best-red"}`}>
+            <p 
+              className="text-sm uppercase tracking-widest font-semibold mb-4 animate-fade-in stagger-1"
+              style={{ color: backgroundImage ? 'rgba(255,255,255,0.9)' : undefined }}
+            >
               {subtitle}
             </p>
           )}
 
-          <Heading
-            as="h1"
-            size={isHome ? "xl" : "lg"}
-            className={`mb-6 animate-fade-in stagger-2 ${backgroundImage ? "text-clean-white drop-shadow-lg" : ""}`}
+          <h1 
+            className={`font-display font-bold leading-tight text-balance mb-6 animate-fade-in stagger-2 ${isHome ? "text-4xl md:text-5xl lg:text-6xl" : "text-3xl md:text-4xl lg:text-5xl"}`}
+            style={{ color: backgroundImage ? '#FFFFFF' : '#2B2B2B', textShadow: backgroundImage ? '0 2px 8px rgba(0,0,0,0.5)' : undefined }}
           >
             {title}
-          </Heading>
+          </h1>
 
           {description && (
-            <Subheading className={`mb-10 animate-fade-in stagger-3 max-w-2xl ${backgroundImage ? "text-clean-white font-medium text-lg md:text-xl leading-relaxed drop-shadow-sm" : ""}`}>
+            <p 
+              className="font-body font-medium text-lg md:text-xl leading-relaxed tracking-wide mb-10 animate-fade-in stagger-3 max-w-2xl"
+              style={{ color: backgroundImage ? 'rgba(255,255,255,0.95)' : '#3D3D3D', textShadow: backgroundImage ? '0 1px 4px rgba(0,0,0,0.3)' : undefined }}
+            >
               {description}
-            </Subheading>
+            </p>
           )}
 
           {(primaryCta || secondaryCta) && (

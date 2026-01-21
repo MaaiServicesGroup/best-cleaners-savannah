@@ -78,7 +78,7 @@ export function GeoPageContent({ data }: GeoPageContentProps) {
               </div>
 
               {/* Proximity Statement */}
-              <div className="bg-heritage-blue/10 border-l-4 border-heritage-blue p-6 my-8">
+              <div className="bg-charcoal/5 border-l-4 border-charcoal p-6 my-8">
                 <p className="text-charcoal font-medium">
                   {data.proximityStatement}
                 </p>
@@ -94,12 +94,12 @@ export function GeoPageContent({ data }: GeoPageContentProps) {
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="flex items-center gap-2 p-4 bg-clean-white border border-border hover:border-heritage-blue transition-colors group"
+                      className="flex items-center gap-2 p-4 bg-clean-white border border-border hover:border-charcoal transition-colors group"
                     >
-                      <svg className="w-5 h-5 text-heritage-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      <span className="text-charcoal group-hover:text-heritage-blue transition-colors">
+                      <span className="text-charcoal group-hover:text-charcoal-soft transition-colors">
                         {service.name}
                       </span>
                     </Link>
@@ -120,7 +120,7 @@ export function GeoPageContent({ data }: GeoPageContentProps) {
                     <h4 className="font-semibold text-charcoal">Waters Avenue</h4>
                     <p className="text-sm text-muted">2011 E. Waters Avenue</p>
                     <p className="text-sm text-muted">Savannah, GA 31404</p>
-                    <a href="tel:9123541234" className="text-sm text-heritage-blue hover:text-best-red">
+                    <a href="tel:9123541234" className="text-sm text-charcoal hover:text-charcoal-soft">
                       (912) 354-1234
                     </a>
                   </div>
@@ -128,7 +128,7 @@ export function GeoPageContent({ data }: GeoPageContentProps) {
                     <h4 className="font-semibold text-charcoal">Abercorn Street</h4>
                     <p className="text-sm text-muted">7805 Abercorn Street</p>
                     <p className="text-sm text-muted">Savannah, GA 31406</p>
-                    <a href="tel:9123555678" className="text-sm text-heritage-blue hover:text-best-red">
+                    <a href="tel:9123555678" className="text-sm text-charcoal hover:text-charcoal-soft">
                       (912) 355-5678
                     </a>
                   </div>
@@ -149,7 +149,7 @@ export function GeoPageContent({ data }: GeoPageContentProps) {
                   <ul className="space-y-2">
                     {data.landmarks.map((landmark) => (
                       <li key={landmark} className="flex items-start gap-2 text-sm text-muted">
-                        <svg className="w-4 h-4 text-heritage-blue shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-charcoal shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         </svg>
                         {landmark}
@@ -169,7 +169,7 @@ export function GeoPageContent({ data }: GeoPageContentProps) {
                     <li key={area.href}>
                       <Link
                         href={area.href}
-                        className="text-heritage-blue hover:text-best-red transition-colors"
+                        className="text-charcoal hover:text-charcoal-soft transition-colors"
                       >
                         {area.name}
                       </Link>

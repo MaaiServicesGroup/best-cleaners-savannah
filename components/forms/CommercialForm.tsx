@@ -38,8 +38,8 @@ export function CommercialForm({ formspreeId = "placeholder" }: CommercialFormPr
 
   if (status === "success") {
     return (
-      <div className="bg-heritage-blue/10 border border-heritage-blue p-8 text-center">
-        <svg className="w-12 h-12 text-heritage-blue mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="bg-charcoal/5 border border-charcoal/30 p-8 text-center">
+        <svg className="w-12 h-12 text-charcoal mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h3 className="font-display text-xl font-semibold text-charcoal mb-2">Inquiry Received!</h3>
@@ -150,7 +150,7 @@ export function CommercialForm({ formspreeId = "placeholder" }: CommercialFormPr
             type="checkbox"
             name="invoicingNeeds"
             value="yes"
-            className="w-4 h-4 text-heritage-blue"
+            className="w-4 h-4 text-charcoal"
           />
           <span>We require invoicing / net terms</span>
         </label>

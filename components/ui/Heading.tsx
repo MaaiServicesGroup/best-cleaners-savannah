@@ -61,12 +61,15 @@ interface SubheadingProps {
 }
 
 export function Subheading({ className, children }: SubheadingProps) {
+  // Check if a text color class is provided in className to avoid override conflicts
+  const hasTextColor = className?.includes("text-");
+  
   return (
     <p
       className={cn(
         "font-body font-medium text-lg md:text-xl leading-relaxed tracking-wide",
-        // Improved contrast - using charcoal-soft instead of muted for better readability
-        "text-charcoal-soft",
+        // Only apply default color if no color class provided
+        !hasTextColor && "text-charcoal-soft",
         className
       )}
     >

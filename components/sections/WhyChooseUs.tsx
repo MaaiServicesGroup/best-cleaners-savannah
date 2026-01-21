@@ -63,9 +63,9 @@ export function WhyChooseUs() {
             {reasons.map((reason) => (
               <div
                 key={reason.label}
-                className="bg-clean-white border border-border rounded-lg p-6 text-center hover:shadow-md hover:border-heritage-blue-muted/30 transition-all"
+                className="bg-clean-white border border-border rounded-lg p-6 text-center hover:shadow-md hover:border-charcoal/20 transition-all"
               >
-                <span className="block font-display text-4xl md:text-5xl font-bold text-heritage-blue-soft mb-2">
+                <span className="block font-display text-4xl md:text-5xl font-bold text-charcoal mb-2">
                   {reason.number}
                 </span>
                 <span className="block font-semibold text-charcoal mb-2">

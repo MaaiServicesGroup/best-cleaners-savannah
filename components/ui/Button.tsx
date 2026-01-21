@@ -11,24 +11,25 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", size = "md", href, children, onClick, ...props }, ref) => {
-    // Base styles with premium motion class for lift/shadow/sheen effects
+    // Base styles
     const baseStyles = cn(
-      "btn-premium", // Premium motion from globals.css
+      "btn-premium",
       "inline-flex items-center justify-center gap-2",
-      "font-montserrat font-semibold uppercase tracking-wide",
-      "cursor-pointer border rounded-lg",
+      "font-semibold uppercase tracking-wide",
+      "cursor-pointer rounded-lg",
+      "transition-all duration-200",
       "disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none",
-      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clean-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+      "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
     );
     
-    // Variant styles - premium liquid glass aesthetic
+    // All CTAs: black/charcoal background with WHITE text - no exceptions
     const variants = {
-      primary: "btn-glass-primary bg-charcoal/95 text-clean-white border-charcoal/80 hover:bg-charcoal hover:border-charcoal",
-      secondary: "bg-charcoal-soft/90 text-clean-white border-charcoal-soft/60 hover:bg-charcoal hover:border-charcoal",
-      outline: "bg-transparent text-charcoal border-charcoal/30 hover:bg-charcoal hover:text-clean-white hover:border-charcoal",
-      ghost: "bg-transparent text-charcoal border-transparent hover:bg-warm-cream",
-      glass: "btn-glass bg-charcoal/90 backdrop-blur-sm text-clean-white border-clean-white/20 hover:bg-charcoal hover:border-clean-white/30",
-      "glass-outline": "btn-glass-outline bg-clean-white/10 backdrop-blur-sm text-clean-white border-clean-white/40 hover:bg-clean-white/20 hover:border-clean-white/60",
+      primary: "bg-charcoal border-2 border-charcoal hover:bg-charcoal-soft hover:border-charcoal-soft",
+      secondary: "bg-charcoal-soft border-2 border-charcoal-soft hover:bg-charcoal hover:border-charcoal",
+      outline: "bg-transparent border-2 border-charcoal hover:bg-charcoal",
+      ghost: "bg-transparent border-2 border-transparent hover:bg-warm-cream hover:border-warm-cream",
+      glass: "bg-charcoal/90 backdrop-blur-sm border-2 border-white/20 hover:bg-charcoal hover:border-white/40",
+      "glass-outline": "bg-white/10 backdrop-blur-sm border-2 border-white/50 hover:bg-white/20 hover:border-white/70",
     };
     
     const sizes = {
@@ -37,6 +38,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       lg: "px-8 py-4 text-base",
     };
     
+    // Determine text color - white for most variants, charcoal for ghost/outline default state
+    const needsDarkText = variant === "ghost" || variant === "outline";
+    const textColorStyle = needsDarkText ? { color: '#2B2B2B' } : { color: '#FFFFFF' };
+    
     const classes = cn(baseStyles, variants[variant], sizes[size], className);
     
     if (href) {
@@ -44,6 +49,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         <Link 
           href={href} 
           className={classes}
+          style={textColorStyle}
           onClick={onClick as unknown as React.MouseEventHandler<HTMLAnchorElement>}
         >
           {children}
@@ -52,7 +58,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     }
     
     return (
-      <button ref={ref} className={classes} onClick={onClick} {...props}>
+      <button ref={ref} className={classes} style={textColorStyle} onClick={onClick} {...props}>
         {children}
       </button>
     );
