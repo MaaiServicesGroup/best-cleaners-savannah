@@ -36,10 +36,14 @@ export function Heading({
   
   const sizeClass = size ? sizeClasses[size] : defaultSizes[Component];
   
+  // Check if a text color class is provided in className to avoid override conflicts
+  const hasTextColor = className?.includes("text-");
+  
   return (
     <Component
       className={cn(
-        "font-display font-bold leading-tight text-charcoal",
+        "font-display font-bold leading-tight",
+        !hasTextColor && "text-charcoal",
         sizeClass,
         balance && "text-balance",
         className

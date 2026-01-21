@@ -85,7 +85,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation - shifted right with more spacing */}
-          <div className="hidden lg:flex items-center gap-10 ml-8">
+          <div className="hidden lg:flex items-center gap-10 ml-auto">
             {navigation.map((item) => (
               <div
                 key={item.name}
@@ -138,8 +138,16 @@ export function Header() {
             ))}
           </div>
 
+          {/* Careers Link - Right justified, separate from main nav */}
+          <Link
+            href="/dry-cleaning-employment/"
+            className="hidden lg:block nav-link text-charcoal font-medium text-sm hover:text-charcoal-soft transition-colors py-2 ml-8"
+          >
+            Careers
+          </Link>
+
           {/* CTA Button */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:block ml-6">
             <Button href="/contact-best-dry-cleaners/" size="sm">
               Contact Us
             </Button>
@@ -236,6 +244,14 @@ export function Header() {
                   )}
                 </div>
               ))}
+              {/* Careers link */}
+              <Link
+                href="/dry-cleaning-employment/"
+                className="block py-3 text-charcoal font-medium hover:text-charcoal-soft transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Careers
+              </Link>
             </div>
           </div>
 

@@ -56,7 +56,8 @@ export function Footer() {
                     alt="Best Cleaners & Laundry"
                     width={56}
                     height={56}
-                    className="h-14 w-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity"
+                    className="h-14 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
+                    style={{ filter: 'brightness(0) invert(1)' }}
                   />
                 </div>
                 <div>

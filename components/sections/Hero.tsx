@@ -76,7 +76,7 @@ export function Hero({
           <Heading
             as="h1"
             size={isHome ? "xl" : "lg"}
-            className={`mb-6 animate-fade-in stagger-2 ${backgroundImage ? "text-clean-white" : ""}`}
+            className={`mb-6 animate-fade-in stagger-2 ${backgroundImage ? "text-clean-white drop-shadow-lg" : ""}`}
           >
             {title}
           </Heading>
