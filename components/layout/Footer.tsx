@@ -50,16 +50,13 @@ export function Footer() {
             {/* Brand Column */}
             <div className="lg:col-span-2">
               <Link href="/" className="inline-flex items-center gap-4 mb-6 group">
-                <div className="relative w-14 h-14 flex items-center justify-center">
-                  <Image
-                    src="/images/Black and White BC Logo.png"
-                    alt="Best Cleaners & Laundry"
-                    width={56}
-                    height={56}
-                    className="h-14 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
-                    style={{ filter: 'brightness(0) invert(1)' }}
-                  />
-                </div>
+                <Image
+                  src="/images/BCLOGO (2).png"
+                  alt="Best Cleaners & Laundry"
+                  width={60}
+                  height={60}
+                  className="h-14 w-auto object-contain"
+                />
                 <div>
                   <span className="font-display text-xl font-bold text-clean-white">
                     Best Cleaners
