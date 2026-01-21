@@ -10,8 +10,9 @@ export function Card({ className, children, hover = true }: CardProps) {
   return (
     <div
       className={cn(
-        "bg-clean-white border border-border p-8 transition-all duration-300",
-        hover && "hover:shadow-lg hover:-translate-y-0.5",
+        "bg-clean-white p-8 rounded-lg",
+        // Use premium card styles from globals.css for refined hover effects
+        hover ? "card-premium" : "border border-border rounded-lg",
         className
       )}
     >

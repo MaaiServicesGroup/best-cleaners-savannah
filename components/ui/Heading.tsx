@@ -50,7 +50,7 @@ export function Heading({
   );
 }
 
-// Subheading component for taglines
+// Subheading component for taglines - improved readability
 interface SubheadingProps {
   className?: string;
   children: React.ReactNode;
@@ -60,7 +60,9 @@ export function Subheading({ className, children }: SubheadingProps) {
   return (
     <p
       className={cn(
-        "font-body font-medium text-lg md:text-xl text-muted",
+        "font-body font-medium text-lg md:text-xl leading-relaxed tracking-wide",
+        // Improved contrast - using charcoal-soft instead of muted for better readability
+        "text-charcoal-soft",
         className
       )}
     >

@@ -1,4 +1,7 @@
+"use client";
+
 import { cn } from "@/lib/utils";
+import { useReveal } from "@/lib/hooks";
 
 interface ContainerProps {
   className?: string;
@@ -20,16 +23,30 @@ export function Container({ className, children, size = "default" }: ContainerPr
   );
 }
 
-// Section wrapper with padding
+// Section wrapper with padding and optional reveal animation
 interface SectionProps {
   className?: string;
   children: React.ReactNode;
   bg?: "cream" | "white" | "charcoal" | "heritage-blue";
   padding?: "sm" | "md" | "lg";
   id?: string;
+  /** Enable viewport-triggered reveal animation. Default: true */
+  animate?: boolean;
 }
 
-export function Section({ className, children, bg = "cream", padding = "md", id }: SectionProps) {
+export function Section({ 
+  className, 
+  children, 
+  bg = "cream", 
+  padding = "md", 
+  id,
+  animate = true 
+}: SectionProps) {
+  const { ref, isVisible } = useReveal({
+    threshold: 0.1,
+    rootMargin: "0px 0px -60px 0px",
+  });
+
   const backgrounds = {
     cream: "bg-warm-cream",
     white: "bg-clean-white",
@@ -44,7 +61,18 @@ export function Section({ className, children, bg = "cream", padding = "md", id 
   };
   
   return (
-    <section id={id} className={cn(backgrounds[bg], paddings[padding], className)}>
+    <section 
+      ref={ref as React.RefObject<HTMLElement>}
+      id={id} 
+      className={cn(
+        backgrounds[bg], 
+        paddings[padding],
+        // Apply reveal animation classes when animate is enabled
+        animate && "reveal",
+        animate && isVisible && "visible",
+        className
+      )}
+    >
       {children}
     </section>
   );

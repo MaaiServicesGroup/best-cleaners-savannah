@@ -43,7 +43,8 @@ export function Hero({
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-charcoal/70" />
+          {/* Improved overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/70 to-charcoal/60" />
         </div>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-warm-cream via-clean-white to-warm-cream">
@@ -79,7 +80,7 @@ export function Hero({
           </Heading>
 
           {description && (
-            <Subheading className={`mb-10 animate-fade-in stagger-3 ${backgroundImage ? "text-clean-white/90" : ""}`}>
+            <Subheading className={`mb-10 animate-fade-in stagger-3 max-w-2xl ${backgroundImage ? "text-clean-white font-medium text-lg md:text-xl leading-relaxed drop-shadow-sm" : ""}`}>
               {description}
             </Subheading>
           )}

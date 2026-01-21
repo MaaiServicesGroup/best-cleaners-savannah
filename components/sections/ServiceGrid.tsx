@@ -92,18 +92,18 @@ export function ServiceGrid({ showTitle = true, limit }: ServiceGridProps) {
           {displayedServices.map((service) => (
             <Link key={service.href} href={service.href} className="group">
               <Card className="h-full">
-                <div className="text-heritage-blue mb-4 transition-transform duration-300 group-hover:scale-110">
+                <div className="text-heritage-blue-soft mb-4 transition-transform duration-300 group-hover:scale-105">
                   {service.icon}
                 </div>
-                <CardTitle className="group-hover:text-best-red transition-colors">
+                <CardTitle className="group-hover:text-heritage-blue transition-colors">
                   {service.title}
                 </CardTitle>
-                <CardDescription className="mt-2">
+                <CardDescription className="mt-2 text-charcoal-soft">
                   {service.description}
                 </CardDescription>
-                <div className="mt-4 text-sm font-semibold text-heritage-blue group-hover:text-best-red transition-colors flex items-center gap-1">
+                <div className="mt-4 text-sm font-semibold text-heritage-blue-soft group-hover:text-charcoal transition-colors flex items-center gap-1">
                   Learn more
-                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 card-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -113,7 +113,7 @@ export function ServiceGrid({ showTitle = true, limit }: ServiceGridProps) {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="/best-cleaners-savannah-services/" variant="secondary">
+          <Button href="/best-cleaners-savannah-services/" variant="primary">
             View All Services
           </Button>
         </div>

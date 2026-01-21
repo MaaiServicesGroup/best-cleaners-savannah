@@ -9,12 +9,22 @@
    CSS CUSTOM PROPERTIES (Brand Tokens)
    ============================================ */
 :root {
-  /* Brand Colors */
+  /* Brand Colors - Primary palette */
   --best-red: #B1121B;
+  --best-red-soft: #C4343C;        /* Softened red for better contrast */
+  --best-red-hover: #8f0e16;
   --heritage-blue: #2F4699;
+  --heritage-blue-soft: #4A5FA8;   /* Softened blue for accents */
+  --heritage-blue-muted: #5A6DB3;  /* Even lighter for backgrounds */
+  --heritage-blue-hover: #243875;
+  
+  /* Neutral Palette - Expanded for calmer feel */
   --clean-white: #FFFFFF;
-  --warm-cream: #F6F5F1;
+  --warm-cream: #F8F7F4;           /* Slightly warmer */
+  --light-gray: #F3F4F6;
+  --medium-gray: #9CA3AF;
   --charcoal: #2B2B2B;
+  --charcoal-soft: #3D3D3D;        /* Softer dark for text */
   
   /* Functional Colors */
   --background: var(--warm-cream);
@@ -22,7 +32,9 @@
   --primary: var(--best-red);
   --secondary: var(--heritage-blue);
   --muted: #6B7280;
-  --border: #E5E5E5;
+  --muted-foreground: #9CA3AF;
+  --border: #E5E7EB;               /* Slightly softer border */
+  --border-soft: #F3F4F6;
   
   /* Typography */
   --font-display: 'Playfair Display', Georgia, serif;
@@ -31,29 +43,54 @@
   /* Spacing */
   --container-max: 1280px;
   --section-padding: 5rem;
+  
+  /* Border Radius - Consistent rounded corners */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
 }
 
 /* ============================================
    TAILWIND THEME EXTENSION
    ============================================ */
 @theme inline {
-  /* Colors */
+  /* Colors - Primary */
   --color-best-red: var(--best-red);
+  --color-best-red-soft: var(--best-red-soft);
+  --color-best-red-hover: var(--best-red-hover);
   --color-heritage-blue: var(--heritage-blue);
+  --color-heritage-blue-soft: var(--heritage-blue-soft);
+  --color-heritage-blue-muted: var(--heritage-blue-muted);
+  --color-heritage-blue-hover: var(--heritage-blue-hover);
+  
+  /* Colors - Neutrals */
   --color-clean-white: var(--clean-white);
   --color-warm-cream: var(--warm-cream);
+  --color-light-gray: var(--light-gray);
+  --color-medium-gray: var(--medium-gray);
   --color-charcoal: var(--charcoal);
+  --color-charcoal-soft: var(--charcoal-soft);
   
+  /* Colors - Functional */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
   
   /* Fonts */
   --font-display: var(--font-display);
   --font-body: var(--font-body);
+  
+  /* Border Radius */
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
 }
 
 /* ============================================
@@ -156,58 +193,62 @@ a:hover {
   font-size: 0.9375rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-radius: 0;
+  border-radius: var(--radius-md);
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.25s ease;
 }
 
 .btn-primary {
-  background: var(--best-red);
+  background: var(--charcoal);
   color: var(--clean-white);
-  border-color: var(--best-red);
+  border-color: var(--charcoal);
 }
 
 .btn-primary:hover {
-  background: #8f0e16;
-  border-color: #8f0e16;
+  background: var(--charcoal-soft);
+  border-color: var(--charcoal-soft);
   color: var(--clean-white);
 }
 
 .btn-secondary {
-  background: var(--heritage-blue);
+  background: var(--heritage-blue-soft);
   color: var(--clean-white);
-  border-color: var(--heritage-blue);
+  border-color: var(--heritage-blue-soft);
 }
 
 .btn-secondary:hover {
-  background: #243875;
-  border-color: #243875;
+  background: var(--heritage-blue);
+  border-color: var(--heritage-blue);
   color: var(--clean-white);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--charcoal);
-  border-color: var(--charcoal);
+  border-color: var(--border);
 }
 
 .btn-outline:hover {
   background: var(--charcoal);
   color: var(--clean-white);
+  border-color: var(--charcoal);
 }
 
 /* Cards */
 .card {
   background: var(--clean-white);
   border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
   padding: 2rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
+  border-color: var(--heritage-blue-muted);
 }
 
 /* Badge */
@@ -220,11 +261,12 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border: 1px solid currentColor;
+  border-radius: var(--radius-sm);
 }
 
 .badge-heritage {
-  color: var(--heritage-blue);
-  background: rgba(47, 70, 153, 0.08);
+  color: var(--heritage-blue-soft);
+  background: rgba(47, 70, 153, 0.06);
 }
 
 /* ============================================
@@ -238,6 +280,7 @@ select {
   font-family: var(--font-body);
   font-size: 1rem;
   border: 1px solid var(--border);
+  border-radius: var(--radius-md);
   background: var(--clean-white);
   color: var(--charcoal);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -247,8 +290,8 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: var(--heritage-blue);
-  box-shadow: 0 0 0 3px rgba(47, 70, 153, 0.1);
+  border-color: var(--heritage-blue-soft);
+  box-shadow: 0 0 0 3px rgba(74, 95, 168, 0.1);
 }
 
 label {
@@ -293,8 +336,22 @@ label {
 }
 
 /* ============================================
-   ANIMATIONS
+   ANIMATIONS & MOTION SYSTEM
+   Premium, restrained motion for "quiet luxury"
    ============================================ */
+
+/* Motion timing tokens */
+:root {
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-spring: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-reveal: 600ms;
+}
+
+/* Base fade-in keyframe */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -315,6 +372,252 @@ label {
 .stagger-2 { animation-delay: 0.2s; }
 .stagger-3 { animation-delay: 0.3s; }
 .stagger-4 { animation-delay: 0.4s; }
+
+/* ============================================
+   BUTTON PREMIUM STATES
+   Subtle lift, shadow bloom, tactile feedback
+   ============================================ */
+
+/* Premium button base - applied via component */
+.btn-premium {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0) scale(1);
+  border-radius: var(--radius-md);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: 
+    transform var(--duration-normal) var(--ease-spring),
+    box-shadow var(--duration-normal) var(--ease-spring),
+    background-color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease;
+}
+
+/* Sheen effect pseudo-element */
+.btn-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transition: left var(--duration-slow) var(--ease-out-expo);
+  pointer-events: none;
+}
+
+/* Hover states - only for pointer devices */
+@media (hover: hover) and (pointer: fine) {
+  .btn-premium:hover {
+    transform: translateY(-2px) scale(1);
+    box-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.08),
+      0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+  
+  .btn-premium:hover::before {
+    left: 100%;
+  }
+}
+
+/* Active/pressed state - tactile feedback */
+.btn-premium:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition-duration: var(--duration-fast);
+}
+
+/* Focus state for accessibility */
+.btn-premium:focus-visible {
+  outline: 2px solid var(--heritage-blue);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   CARD HOVER REFINEMENTS
+   Elevation, border accent, smooth curves
+   ============================================ */
+
+.card-premium {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: 
+    transform var(--duration-normal) var(--ease-spring),
+    box-shadow var(--duration-normal) var(--ease-out-quart),
+    border-color var(--duration-normal) ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-premium:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+      0 4px 6px rgba(0, 0, 0, 0.02),
+      0 10px 20px rgba(0, 0, 0, 0.06);
+    border-color: rgba(74, 95, 168, 0.25);
+  }
+}
+
+/* Arrow/icon nudge on card hover */
+.card-arrow {
+  transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.group:hover .card-arrow {
+  transform: translateX(4px);
+}
+
+/* ============================================
+   NAVIGATION ANIMATIONS
+   Underline sweep, smooth transitions
+   ============================================ */
+
+/* Nav link with animated underline */
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--best-red);
+  transition: width var(--duration-normal) var(--ease-out-expo);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-link:hover::after {
+    width: 100%;
+  }
+}
+
+/* Header scroll state */
+.header-base {
+  transition: 
+    background-color var(--duration-normal) ease,
+    box-shadow var(--duration-normal) ease,
+    backdrop-filter var(--duration-normal) ease;
+}
+
+.header-scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile menu slide transition */
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform var(--duration-slow) var(--ease-out-expo);
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Mobile menu overlay */
+.mobile-menu-overlay {
+  opacity: 0;
+  transition: opacity var(--duration-normal) ease;
+  pointer-events: none;
+}
+
+.mobile-menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Dropdown menu animation */
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(-8px);
+  border-radius: var(--radius-md);
+  transition: 
+    opacity var(--duration-fast) ease,
+    transform var(--duration-fast) var(--ease-out-expo);
+  pointer-events: none;
+}
+
+.dropdown-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ============================================
+   SECTION REVEAL ANIMATIONS
+   Viewport-triggered fade + rise
+   ============================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: 
+    opacity var(--duration-reveal) var(--ease-out-quart),
+    transform var(--duration-reveal) var(--ease-out-quart);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reveal stagger delays for children */
+.reveal-stagger > *:nth-child(1) { --reveal-delay: 0ms; }
+.reveal-stagger > *:nth-child(2) { --reveal-delay: 60ms; }
+.reveal-stagger > *:nth-child(3) { --reveal-delay: 120ms; }
+.reveal-stagger > *:nth-child(4) { --reveal-delay: 180ms; }
+.reveal-stagger > *:nth-child(5) { --reveal-delay: 240ms; }
+.reveal-stagger > *:nth-child(6) { --reveal-delay: 300ms; }
+
+/* ============================================
+   IMAGE FADE-IN
+   Smooth load transition
+   ============================================ */
+
+.img-fade {
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-out-quart);
+}
+
+.img-fade.loaded,
+.img-fade[data-loaded="true"] {
+  opacity: 1;
+}
+
+/* ============================================
+   REDUCED MOTION SUPPORT
+   Respect user preferences
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .btn-premium::before {
+    display: none;
+  }
+}
 
 /* ============================================
    RESPONSIVE ADJUSTMENTS

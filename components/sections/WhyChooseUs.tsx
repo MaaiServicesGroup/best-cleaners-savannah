@@ -48,7 +48,7 @@ export function WhyChooseUs() {
               wedding dress, a trusted work suit, or your favorite everyday shirt. That&apos;s why we 
               treat every garment with the respect and attention it deserves.
             </p>
-            <div className="relative aspect-[16/9] overflow-hidden border border-border">
+            <div className="relative aspect-[16/9] overflow-hidden border border-border rounded-lg">
               <Image
                 src="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaning equipment.jpg"
                 alt="Professional dry cleaning equipment at Best Cleaners"
@@ -63,15 +63,15 @@ export function WhyChooseUs() {
             {reasons.map((reason) => (
               <div
                 key={reason.label}
-                className="bg-clean-white border border-border p-6 text-center hover:shadow-md transition-shadow"
+                className="bg-clean-white border border-border rounded-lg p-6 text-center hover:shadow-md hover:border-heritage-blue-muted/30 transition-all"
               >
-                <span className="block font-display text-4xl md:text-5xl font-bold text-heritage-blue mb-2">
+                <span className="block font-display text-4xl md:text-5xl font-bold text-heritage-blue-soft mb-2">
                   {reason.number}
                 </span>
                 <span className="block font-semibold text-charcoal mb-2">
                   {reason.label}
                 </span>
-                <p className="text-sm text-muted">
+                <p className="text-sm text-charcoal-soft leading-relaxed">
                   {reason.description}
                 </p>
               </div>

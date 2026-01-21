@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container } from "./Container";
 import { Button } from "@/components/ui";
+import { cn } from "@/lib/utils";
 
 const navigation = [
   { name: "About", href: "/best-cleaners-savannah/" },
@@ -28,9 +29,40 @@ const navigation = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Scroll-aware header: adds subtle background change on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    
+    // Check initial scroll position
+    handleScroll();
+    
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
 
   return (
-    <header className="bg-clean-white border-b border-border sticky top-0 z-50">
+    <header 
+      className={cn(
+        "header-base bg-clean-white border-b border-border sticky top-0 z-50",
+        isScrolled && "header-scrolled"
+      )}
+    >
       <Container>
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -52,8 +84,8 @@ export function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Desktop Navigation - shifted right with more spacing */}
+          <div className="hidden lg:flex items-center gap-10 ml-8">
             {navigation.map((item) => (
               <div
                 key={item.name}
@@ -63,12 +95,15 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className="text-charcoal font-medium text-sm hover:text-best-red transition-colors py-2"
+                  className="nav-link text-charcoal font-medium text-sm hover:text-best-red transition-colors py-2"
                 >
                   {item.name}
                   {item.children && (
                     <svg
-                      className="inline-block ml-1 w-4 h-4"
+                      className={cn(
+                        "inline-block ml-1 w-4 h-4 transition-transform duration-200",
+                        activeDropdown === item.name && "rotate-180"
+                      )}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -78,15 +113,20 @@ export function Header() {
                   )}
                 </Link>
                 
-                {/* Dropdown */}
-                {item.children && activeDropdown === item.name && (
+                {/* Dropdown with animation */}
+                {item.children && (
                   <div className="absolute top-full left-0 mt-0 pt-2">
-                    <div className="bg-clean-white border border-border shadow-lg py-2 min-w-[200px]">
+                    <div 
+                      className={cn(
+                        "dropdown-menu bg-clean-white border border-border shadow-lg py-2 min-w-[200px] rounded-lg overflow-hidden",
+                        activeDropdown === item.name && "open"
+                      )}
+                    >
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2 text-sm text-charcoal hover:bg-warm-cream hover:text-best-red transition-colors"
+                          className="block px-4 py-2.5 text-sm text-charcoal hover:bg-warm-cream hover:text-heritage-blue transition-colors"
                         >
                           {child.name}
                         </Link>
@@ -126,26 +166,67 @@ export function Header() {
           </button>
         </nav>
 
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-border py-4">
-            <div className="flex flex-col gap-2">
+      </Container>
+
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={cn(
+          "mobile-menu-overlay fixed inset-0 bg-charcoal/50 z-40 lg:hidden",
+          mobileMenuOpen && "open"
+        )}
+        onClick={() => setMobileMenuOpen(false)}
+        aria-hidden="true"
+      />
+
+      {/* Mobile Menu Slide-in Panel */}
+      <div 
+        className={cn(
+          "mobile-menu fixed top-0 left-0 h-full w-[300px] bg-clean-white z-50 lg:hidden shadow-xl rounded-r-xl",
+          mobileMenuOpen && "open"
+        )}
+      >
+        <div className="flex flex-col h-full">
+          {/* Mobile Menu Header */}
+          <div className="flex items-center justify-between p-4 border-b border-border">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+              <Image
+                src="/images/BCLOGO (2).png"
+                alt="Best Cleaners & Laundry"
+                width={48}
+                height={48}
+                className="h-10 w-auto"
+              />
+            </Link>
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              className="p-2 text-charcoal hover:text-best-red transition-colors"
+              aria-label="Close menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Mobile Menu Navigation */}
+          <div className="flex-1 overflow-y-auto py-4">
+            <div className="flex flex-col gap-1 px-4">
               {navigation.map((item) => (
                 <div key={item.name}>
                   <Link
                     href={item.href}
-                    className="block py-2 text-charcoal font-medium hover:text-best-red transition-colors"
+                    className="block py-3 text-charcoal font-medium hover:text-best-red transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
                   </Link>
                   {item.children && (
-                    <div className="pl-4 border-l-2 border-border ml-2">
+                    <div className="pl-4 border-l-2 border-border ml-2 mb-2">
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block py-1.5 text-sm text-muted hover:text-best-red transition-colors"
+                          className="block py-2 text-sm text-muted hover:text-best-red transition-colors"
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {child.name}
@@ -155,15 +236,21 @@ export function Header() {
                   )}
                 </div>
               ))}
-              <div className="pt-4 mt-2 border-t border-border">
-                <Button href="/contact-best-dry-cleaners/" className="w-full">
-                  Contact Us
-                </Button>
-              </div>
             </div>
           </div>
-        )}
-      </Container>
+
+          {/* Mobile Menu Footer */}
+          <div className="p-4 border-t border-border">
+            <Button 
+              href="/contact-best-dry-cleaners/" 
+              className="w-full"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact Us
+            </Button>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }
