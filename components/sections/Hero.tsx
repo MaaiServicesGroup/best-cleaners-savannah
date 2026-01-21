@@ -43,8 +43,10 @@ export function Hero({
             className="object-cover"
             priority
           />
-          {/* Improved overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/70 to-charcoal/60" />
+          {/* Strong overlay for guaranteed text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/85 to-charcoal/75" />
+          {/* Additional subtle vignette for depth */}
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-charcoal/20" />
         </div>
       ) : (
         <div className="absolute inset-0 bg-gradient-to-br from-warm-cream via-clean-white to-warm-cream">
@@ -88,12 +90,12 @@ export function Hero({
           {(primaryCta || secondaryCta) && (
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in stagger-4">
               {primaryCta && (
-                <Button href={primaryCta.href} size="lg">
+                <Button href={primaryCta.href} size="lg" variant="glass">
                   {primaryCta.text}
                 </Button>
               )}
               {secondaryCta && (
-                <Button href={secondaryCta.href} variant="outline" size="lg" className={backgroundImage ? "border-clean-white text-clean-white hover:bg-clean-white hover:text-charcoal" : ""}>
+                <Button href={secondaryCta.href} variant="glass-outline" size="lg">
                   {secondaryCta.text}
                 </Button>
               )}
@@ -123,7 +125,7 @@ export function PageHero({ title, description, breadcrumb }: PageHeroProps) {
           <nav className="mb-4 text-sm">
             <ol className="flex items-center gap-2 text-muted">
               <li>
-                <a href="/" className="hover:text-best-red transition-colors">Home</a>
+                <a href="/" className="hover:text-charcoal transition-colors">Home</a>
               </li>
               {breadcrumb.map((item, i) => (
                 <li key={item.href} className="flex items-center gap-2">
@@ -131,7 +133,7 @@ export function PageHero({ title, description, breadcrumb }: PageHeroProps) {
                   {i === breadcrumb.length - 1 ? (
                     <span className="text-charcoal">{item.label}</span>
                   ) : (
-                    <a href={item.href} className="hover:text-best-red transition-colors">{item.label}</a>
+                    <a href={item.href} className="hover:text-charcoal transition-colors">{item.label}</a>
                   )}
                 </li>
               ))}

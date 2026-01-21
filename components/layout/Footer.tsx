@@ -49,32 +49,33 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
             {/* Brand Column */}
             <div className="lg:col-span-2">
-              <Link href="/" className="inline-flex items-center gap-3 mb-6">
-                <Image
-                  src="/images/BCLOGO (2).png"
-                  alt="Best Cleaners & Laundry"
-                  width={60}
-                  height={60}
-                  className="h-14 w-auto"
-                  style={{ filter: 'brightness(0) invert(1)' }}
-                />
+              <Link href="/" className="inline-flex items-center gap-4 mb-6 group">
+                <div className="relative w-14 h-14 flex items-center justify-center">
+                  <Image
+                    src="/images/Black and White BC Logo.png"
+                    alt="Best Cleaners & Laundry"
+                    width={56}
+                    height={56}
+                    className="h-14 w-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
+                </div>
                 <div>
                   <span className="font-display text-xl font-bold text-clean-white">
                     Best Cleaners
                   </span>
-                  <span className="block text-xs text-clean-white/70 tracking-wide">
+                  <span className="block text-xs text-clean-white/60 tracking-wide">
                     & Laundry
                   </span>
                 </div>
               </Link>
-              <p className="text-clean-white/80 text-sm leading-relaxed mb-6 max-w-sm">
+              <p className="text-clean-white/70 text-sm leading-relaxed mb-8 max-w-sm">
                 Serving Savannah and the surrounding areas since 1910. Over a century of 
                 trusted garment care, professional cleaning, and exceptional service.
               </p>
               <div className="flex gap-3">
                 <a
                   href="#"
-                  className="w-10 h-10 flex items-center justify-center border border-clean-white/30 rounded-md text-clean-white/70 hover:text-clean-white hover:border-clean-white/50 hover:bg-clean-white/10 transition-all"
+                  className="w-10 h-10 flex items-center justify-center rounded-lg bg-clean-white/5 text-clean-white/60 hover:text-clean-white hover:bg-clean-white/10 transition-all duration-200"
                   aria-label="Facebook"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -83,7 +84,7 @@ export function Footer() {
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 flex items-center justify-center border border-clean-white/30 rounded-md text-clean-white/70 hover:text-clean-white hover:border-clean-white/50 hover:bg-clean-white/10 transition-all"
+                  className="w-10 h-10 flex items-center justify-center rounded-lg bg-clean-white/5 text-clean-white/60 hover:text-clean-white hover:bg-clean-white/10 transition-all duration-200"
                   aria-label="Instagram"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -92,7 +93,7 @@ export function Footer() {
                 </a>
                 <a
                   href="#"
-                  className="w-10 h-10 flex items-center justify-center border border-clean-white/30 rounded-md text-clean-white/70 hover:text-clean-white hover:border-clean-white/50 hover:bg-clean-white/10 transition-all"
+                  className="w-10 h-10 flex items-center justify-center rounded-lg bg-clean-white/5 text-clean-white/60 hover:text-clean-white hover:bg-clean-white/10 transition-all duration-200"
                   aria-label="Yelp"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -104,13 +105,13 @@ export function Footer() {
 
             {/* Services */}
             <div>
-              <h3 className="font-display font-semibold text-base text-clean-white mb-5 tracking-wide">Services</h3>
-              <ul className="space-y-2.5">
+              <h3 className="font-display font-semibold text-sm text-clean-white/90 mb-5 uppercase tracking-wider">Services</h3>
+              <ul className="space-y-3">
                 {footerLinks.services.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-clean-white/75 hover:text-clean-white transition-colors"
+                      className="text-sm text-clean-white/60 hover:text-clean-white transition-colors duration-200"
                     >
                       {link.name}
                     </Link>
@@ -121,13 +122,13 @@ export function Footer() {
 
             {/* Company */}
             <div>
-              <h3 className="font-display font-semibold text-base text-clean-white mb-5 tracking-wide">Company</h3>
-              <ul className="space-y-2.5">
+              <h3 className="font-display font-semibold text-sm text-clean-white/90 mb-5 uppercase tracking-wider">Company</h3>
+              <ul className="space-y-3">
                 {footerLinks.company.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-clean-white/75 hover:text-clean-white transition-colors"
+                      className="text-sm text-clean-white/60 hover:text-clean-white transition-colors duration-200"
                     >
                       {link.name}
                     </Link>
@@ -138,13 +139,13 @@ export function Footer() {
 
             {/* Support */}
             <div>
-              <h3 className="font-display font-semibold text-base text-clean-white mb-5 tracking-wide">Support</h3>
-              <ul className="space-y-2.5">
+              <h3 className="font-display font-semibold text-sm text-clean-white/90 mb-5 uppercase tracking-wider">Support</h3>
+              <ul className="space-y-3">
                 {footerLinks.support.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-clean-white/75 hover:text-clean-white transition-colors"
+                      className="text-sm text-clean-white/60 hover:text-clean-white transition-colors duration-200"
                     >
                       {link.name}
                     </Link>
@@ -155,13 +156,13 @@ export function Footer() {
 
             {/* Neighborhoods */}
             <div>
-              <h3 className="font-display font-semibold text-base text-clean-white mb-5 tracking-wide">We Serve</h3>
-              <ul className="space-y-2.5">
+              <h3 className="font-display font-semibold text-sm text-clean-white/90 mb-5 uppercase tracking-wider">We Serve</h3>
+              <ul className="space-y-3">
                 {footerLinks.neighborhoods.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-clean-white/75 hover:text-clean-white transition-colors"
+                      className="text-sm text-clean-white/60 hover:text-clean-white transition-colors duration-200"
                     >
                       {link.name}
                     </Link>
@@ -174,9 +175,9 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-clean-white/15 py-6">
+      <div className="border-t border-clean-white/10 py-6">
         <Container>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-clean-white/60">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-clean-white/50">
             <p>
               © {currentYear} Best Cleaners & Laundry. All rights reserved.
             </p>

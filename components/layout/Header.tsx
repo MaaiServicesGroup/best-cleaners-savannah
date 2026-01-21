@@ -95,7 +95,7 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className="nav-link text-charcoal font-medium text-sm hover:text-best-red transition-colors py-2"
+                  className="nav-link text-charcoal font-medium text-sm hover:text-charcoal-soft transition-colors py-2"
                 >
                   {item.name}
                   {item.children && (
@@ -126,7 +126,7 @@ export function Header() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2.5 text-sm text-charcoal hover:bg-warm-cream hover:text-heritage-blue transition-colors"
+                          className="block px-4 py-2.5 text-sm text-charcoal-soft hover:bg-warm-cream hover:text-charcoal transition-colors"
                         >
                           {child.name}
                         </Link>
@@ -198,8 +198,8 @@ export function Header() {
               />
             </Link>
             <button
-              onClick={() => setMobileMenuOpen(false)}
-              className="p-2 text-charcoal hover:text-best-red transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+            className="p-2 text-charcoal hover:text-charcoal-soft transition-colors"
               aria-label="Close menu"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -215,7 +215,7 @@ export function Header() {
                 <div key={item.name}>
                   <Link
                     href={item.href}
-                    className="block py-3 text-charcoal font-medium hover:text-best-red transition-colors"
+                    className="block py-3 text-charcoal font-medium hover:text-charcoal-soft transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -226,7 +226,7 @@ export function Header() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block py-2 text-sm text-muted hover:text-best-red transition-colors"
+                          className="block py-2 text-sm text-muted hover:text-charcoal transition-colors"
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {child.name}

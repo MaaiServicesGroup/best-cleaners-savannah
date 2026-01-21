@@ -113,7 +113,7 @@ export function ServiceGrid({ showTitle = true, limit }: ServiceGridProps) {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="/best-cleaners-savannah-services/" variant="primary">
+          <Button href="/best-cleaners-savannah-services/" variant="primary" size="lg">
             View All Services
           </Button>
         </div>

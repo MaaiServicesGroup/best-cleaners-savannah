@@ -46,16 +46,14 @@ export function CTABanner({
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
             <Button
               href={primaryCta.href}
-              variant="outline"
-              className="border-clean-white text-clean-white hover:bg-clean-white hover:text-charcoal"
+              variant="glass-outline"
             >
               {primaryCta.text}
             </Button>
             {secondaryCta && (
               <Button
                 href={secondaryCta.href}
-                variant="outline"
-                className="border-clean-white/60 text-clean-white/90 hover:bg-clean-white hover:text-charcoal hover:border-clean-white"
+                variant="glass-outline"
               >
                 {secondaryCta.text}
               </Button>
