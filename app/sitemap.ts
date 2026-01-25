@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/best-cleaners-savannah-services/",
     "/best-cleaners-savannah-locations/",
     "/contact-best-dry-cleaners/",
+    "/faq/",
     "/reviews/",
     "/privacy-policy/",
     "/dry-cleaning-employment/",

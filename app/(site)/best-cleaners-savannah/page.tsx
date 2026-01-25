@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Button, Heading, Card } from "@/components/ui";
@@ -197,6 +198,16 @@ export default function AboutPage() {
               </Card>
             ))}
           </div>
+
+          {/* FAQ CTA */}
+          <p className="text-center mt-12">
+            <Link
+              href="/faq/"
+              className="text-heritage-blue hover:text-heritage-blue-hover transition-colors text-sm font-medium"
+            >
+              Learn more about how we work →
+            </Link>
+          </p>
         </Container>
       </Section>
 

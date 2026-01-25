@@ -172,6 +172,14 @@ export default function ServicesHubPage() {
             <Button href="/how-our-process-works/" variant="outline">
               Learn More About Our Process
             </Button>
+            <p className="mt-4">
+              <Link
+                href="/faq/"
+                className="text-heritage-blue hover:text-heritage-blue-hover transition-colors text-sm"
+              >
+                Or browse common questions
+              </Link>
+            </p>
           </div>
         </Container>
       </Section>

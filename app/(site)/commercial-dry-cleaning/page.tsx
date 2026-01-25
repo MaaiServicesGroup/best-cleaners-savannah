@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button } from "@/components/ui";
@@ -202,6 +203,16 @@ export default function CommercialDryCleaningPage() {
               </p>
             </Card>
           </div>
+
+          {/* FAQ CTA */}
+          <p className="text-center mt-10">
+            <Link
+              href="/faq/"
+              className="text-heritage-blue hover:text-heritage-blue-hover transition-colors text-sm"
+            >
+              See common commercial questions →
+            </Link>
+          </p>
         </Container>
       </Section>
 
