@@ -4,6 +4,7 @@ import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button } from "@/components/ui";
 import { CTABanner } from "@/components/sections/CTABanner";
+import { SameDayBanner } from "@/components/sections/SameDayBanner";
 
 export const metadata: Metadata = {
   title: "Laundry & Press Services | Best Cleaners Savannah",
@@ -21,6 +22,9 @@ export default function LaundryAndPressPage() {
           { label: "Laundry & Press", href: "/services/laundry-and-press/" },
         ]}
       />
+
+      {/* Same-Day Service Banner */}
+      <SameDayBanner variant="light" />
 
       <Section bg="white">
         <Container>

@@ -4,6 +4,7 @@ import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button } from "@/components/ui";
 import { CTABanner, SoftCTA } from "@/components/sections/CTABanner";
+import { SameDayBanner } from "@/components/sections/SameDayBanner";
 
 export const metadata: Metadata = {
   title: "Professional Dry Cleaning Services | Best Cleaners Savannah",
@@ -60,6 +61,9 @@ export default function DryCLeaningPage() {
           { label: "Dry Cleaning", href: "/services/dry-cleaning/" },
         ]}
       />
+
+      {/* Same-Day Service Banner */}
+      <SameDayBanner variant="light" />
 
       {/* Overview */}
       <Section bg="white">

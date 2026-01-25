@@ -6,3 +6,4 @@ export { WhyChooseUs } from "./WhyChooseUs";
 export { LocationsPreview } from "./LocationsPreview";
 export { GeoPageContent } from "./GeoPageContent";
 export { GoogleReviews, GoogleRatingBadge } from "./GoogleReviews";
+export { SameDayBanner } from "./SameDayBanner";

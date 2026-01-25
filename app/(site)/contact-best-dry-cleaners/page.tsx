@@ -3,6 +3,7 @@ import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card } from "@/components/ui";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { SameDayBanner } from "@/components/sections/SameDayBanner";
 
 export const metadata: Metadata = {
   title: "Contact Us | Best Cleaners Savannah",
@@ -32,6 +33,9 @@ export default function ContactPage() {
         description="Have questions? We'd love to hear from you. Reach out by phone, visit us in person, or send us a message."
         breadcrumb={[{ label: "Contact", href: "/contact-best-dry-cleaners/" }]}
       />
+
+      {/* Same-Day Service Banner */}
+      <SameDayBanner variant="light" />
 
       <Section bg="white">
         <Container>

@@ -5,6 +5,7 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { LocationsPreview } from "@/components/sections/LocationsPreview";
 import { CTABanner } from "@/components/sections/CTABanner";
+import { SameDayBanner } from "@/components/sections/SameDayBanner";
 
 export const metadata: Metadata = {
   title: "Best Cleaners & Laundry | Savannah's Trusted Dry Cleaners Since 1910",
@@ -95,6 +96,9 @@ export default function HomePage() {
         variant="home"
         backgroundImage="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaned suits.jpg"
       />
+
+      {/* Same-Day Service Banner */}
+      <SameDayBanner />
 
       {/* Why Choose Us */}
       <WhyChooseUs />

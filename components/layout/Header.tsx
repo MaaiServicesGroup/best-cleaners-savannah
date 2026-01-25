@@ -23,6 +23,7 @@ const navigation = [
   },
   { name: "Locations", href: "/best-cleaners-savannah-locations/" },
   { name: "Reviews", href: "/reviews/" },
+  { name: "Commercial Services", href: "/commercial-dry-cleaning/" },
   { name: "Blog", href: "/best-dry-cleaning-blog/" },
 ];
 

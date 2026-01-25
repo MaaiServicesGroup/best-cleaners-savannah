@@ -4,6 +4,7 @@ import Image from "next/image";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card, Button } from "@/components/ui";
+import { SameDayBanner } from "@/components/sections/SameDayBanner";
 
 export const metadata: Metadata = {
   title: "Locations & Service Areas | Best Cleaners Savannah",
@@ -75,6 +76,9 @@ export default function LocationsPage() {
         description="Two convenient Savannah locations to serve you. Both offer our full range of dry cleaning and laundry services."
         breadcrumb={[{ label: "Locations", href: "/best-cleaners-savannah-locations/" }]}
       />
+
+      {/* Same-Day Service Banner */}
+      <SameDayBanner variant="light" />
 
       {/* Locations */}
       <Section bg="white">
