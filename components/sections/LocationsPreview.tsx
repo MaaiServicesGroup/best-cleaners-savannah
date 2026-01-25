@@ -2,25 +2,24 @@ import Link from "next/link";
 import { Container, Section } from "@/components/layout";
 import { Heading, Subheading, Card, Button } from "@/components/ui";
 
-// Placeholder locations - in production, these would come from Sanity
 const locations = [
   {
     id: "waters",
     name: "Waters Avenue",
-    address: "2011 E. Waters Avenue",
+    address: "1002 Waters Ave",
     city: "Savannah, GA 31404",
-    phone: "(912) 354-1234",
-    hours: "Mon-Fri: 7am-6pm, Sat: 8am-4pm",
+    phone: "(912) 232-1171",
+    hours: "Mon-Fri: 7am-6:30pm, Sat: 9am-2pm",
     isMain: true,
     mapUrl: "https://maps.google.com",
   },
   {
     id: "abercorn",
     name: "Abercorn Street",
-    address: "7805 Abercorn Street",
-    city: "Savannah, GA 31406",
-    phone: "(912) 355-5678",
-    hours: "Mon-Fri: 7am-6pm, Sat: 8am-4pm",
+    address: "11434 Abercorn St. STE B",
+    city: "Savannah, GA 31419",
+    phone: "(912) 335-8811",
+    hours: "Mon-Fri: 7:30am-6pm, Sat: 9am-2pm",
     isMain: false,
     mapUrl: "https://maps.google.com",
   },

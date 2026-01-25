@@ -23,7 +23,7 @@ const jsonLd = {
   name: "Best Cleaners & Laundry",
   description: "Savannah's premier dry cleaning and laundry service since 1910. Expert garment care, professional pressing, and household cleaning services.",
   url: "https://bestcleanerssavannah.com",
-  telephone: "(912) 354-1234",
+  telephone: "(912) 232-1171",
   foundingDate: "1910",
   areaServed: {
     "@type": "City",
@@ -33,7 +33,7 @@ const jsonLd = {
   address: [
     {
       "@type": "PostalAddress",
-      streetAddress: "2011 E. Waters Avenue",
+      streetAddress: "1002 Waters Ave",
       addressLocality: "Savannah",
       addressRegion: "GA",
       postalCode: "31404",
@@ -41,10 +41,10 @@ const jsonLd = {
     },
     {
       "@type": "PostalAddress",
-      streetAddress: "7805 Abercorn Street",
+      streetAddress: "11434 Abercorn St. STE B",
       addressLocality: "Savannah",
       addressRegion: "GA",
-      postalCode: "31406",
+      postalCode: "31419",
       addressCountry: "US",
     },
   ],
@@ -53,13 +53,13 @@ const jsonLd = {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "07:00",
-      closes: "18:00",
+      closes: "18:30",
     },
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: "Saturday",
-      opens: "08:00",
-      closes: "16:00",
+      opens: "09:00",
+      closes: "14:00",
     },
   ],
   priceRange: "$$",
@@ -81,8 +81,8 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <Hero
-        title="Savannah's Most Trusted Dry Cleaners Since 1910"
-        description="For over a century, Best Cleaners & Laundry has provided exceptional garment care to Savannah families. Experience the difference that four generations of expertise makes."
+        title="Experience the difference that generations of expertise makes."
+        description="Our family has been caring for Savannah's finest garments for generations."
         primaryCta={{
           text: "Find a Location",
           href: "/best-cleaners-savannah-locations/",

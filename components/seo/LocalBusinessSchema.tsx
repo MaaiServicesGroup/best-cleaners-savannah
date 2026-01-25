@@ -13,9 +13,9 @@ interface LocalBusinessSchemaProps {
 export function LocalBusinessSchema({
   name = "Best Cleaners & Laundry",
   description = "Savannah's premier dry cleaning and laundry service since 1910. Expert garment care with over a century of trusted experience.",
-  telephone = "(912) 354-1234",
+  telephone = "(912) 232-1171",
   address = {
-    streetAddress: "2011 E. Waters Avenue",
+    streetAddress: "1002 Waters Ave",
     addressLocality: "Savannah",
     addressRegion: "GA",
     postalCode: "31404",
@@ -50,13 +50,13 @@ export function LocalBusinessSchema({
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         opens: "07:00",
-        closes: "18:00",
+        closes: "18:30",
       },
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: "Saturday",
-        opens: "08:00",
-        closes: "16:00",
+        opens: "09:00",
+        closes: "14:00",
       },
     ],
     sameAs: [

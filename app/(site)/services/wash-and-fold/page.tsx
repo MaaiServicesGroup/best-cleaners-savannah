@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
 import { Heading, Card } from "@/components/ui";

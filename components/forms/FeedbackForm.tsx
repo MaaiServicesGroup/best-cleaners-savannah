@@ -74,8 +74,8 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
         </svg>
         <h3 className="font-display text-xl font-semibold text-charcoal mb-2">Feedback Received</h3>
         <p className="text-muted">
-          Thank you for letting us know. We take all feedback seriously and will use it to 
-          improve our service. If you&apos;d like to discuss this further, please call us at (912) 354-1234.
+Thank you for letting us know. We take all feedback seriously and will use it to 
+            improve our service. If you&apos;d like to discuss this further, please call us at (912) 232-1171.
         </p>
       </div>
     );

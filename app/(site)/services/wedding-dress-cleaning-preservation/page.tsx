@@ -149,8 +149,8 @@ export default function WeddingDressPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/wedding dress.jpg"
-                alt="Beautiful wedding dress"
+                src="/images/WeddingDresses.jpg"
+                alt="Wedding dresses ready for preservation"
                 fill
                 className="object-cover"
               />

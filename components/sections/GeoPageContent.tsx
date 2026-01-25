@@ -118,18 +118,18 @@ export function GeoPageContent({ data }: GeoPageContentProps) {
                 <div className="space-y-4">
                   <div className="pb-4 border-b border-border">
                     <h4 className="font-semibold text-charcoal">Waters Avenue</h4>
-                    <p className="text-sm text-muted">2011 E. Waters Avenue</p>
+                    <p className="text-sm text-muted">1002 Waters Ave</p>
                     <p className="text-sm text-muted">Savannah, GA 31404</p>
-                    <a href="tel:9123541234" className="text-sm text-charcoal hover:text-charcoal-soft">
-                      (912) 354-1234
+                    <a href="tel:9122321171" className="text-sm text-charcoal hover:text-charcoal-soft">
+                      (912) 232-1171
                     </a>
                   </div>
                   <div>
                     <h4 className="font-semibold text-charcoal">Abercorn Street</h4>
-                    <p className="text-sm text-muted">7805 Abercorn Street</p>
-                    <p className="text-sm text-muted">Savannah, GA 31406</p>
-                    <a href="tel:9123555678" className="text-sm text-charcoal hover:text-charcoal-soft">
-                      (912) 355-5678
+                    <p className="text-sm text-muted">11434 Abercorn St. STE B</p>
+                    <p className="text-sm text-muted">Savannah, GA 31419</p>
+                    <a href="tel:9123358811" className="text-sm text-charcoal hover:text-charcoal-soft">
+                      (912) 335-8811
                     </a>
                   </div>
                 </div>

@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 const locations = [
   {
     name: "Waters Avenue",
-    address: "2011 E. Waters Avenue, Savannah, GA 31404",
-    phone: "(912) 354-1234",
-    hours: "Mon-Fri: 7am-6pm, Sat: 8am-4pm",
+    address: "1002 Waters Ave, Savannah, GA 31404",
+    phone: "(912) 232-1171",
+    hours: "Mon-Fri: 7am-6:30pm, Sat: 9am-2pm",
   },
   {
     name: "Abercorn Street",
-    address: "7805 Abercorn Street, Savannah, GA 31406",
-    phone: "(912) 355-5678",
-    hours: "Mon-Fri: 7am-6pm, Sat: 8am-4pm",
+    address: "11434 Abercorn St. STE B, Savannah, GA 31419",
+    phone: "(912) 335-8811",
+    hours: "Mon-Fri: 7:30am-6pm, Sat: 9am-2pm",
   },
 ];
 

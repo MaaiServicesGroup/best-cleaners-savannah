@@ -106,7 +106,7 @@ export default function PrivacyPolicyPage() {
               If you have questions about this privacy policy or our practices, please contact us:
             </p>
             <ul>
-              <li>By phone: (912) 354-1234</li>
+              <li>By phone: (912) 232-1171</li>
               <li>By email: privacy@bestcleanerssavannah.com</li>
               <li>In person at either of our locations</li>
             </ul>
