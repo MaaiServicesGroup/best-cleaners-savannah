@@ -68,7 +68,6 @@ export const siteSettings = defineType({
                   { title: "Instagram", value: "instagram" },
                   { title: "Twitter/X", value: "twitter" },
                   { title: "LinkedIn", value: "linkedin" },
-                  { title: "Yelp", value: "yelp" },
                   { title: "Google Business", value: "google" },
                 ],
               },

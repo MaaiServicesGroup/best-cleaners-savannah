@@ -200,39 +200,39 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--charcoal);
+  background: var(--heritage-blue);
   color: var(--clean-white);
-  border-color: var(--charcoal);
+  border-color: var(--heritage-blue);
 }
 
 .btn-primary:hover {
-  background: var(--charcoal-soft);
-  border-color: var(--charcoal-soft);
+  background: var(--heritage-blue-hover);
+  border-color: var(--heritage-blue-hover);
   color: var(--clean-white);
 }
 
 .btn-secondary {
-  background: var(--charcoal-soft);
+  background: var(--heritage-blue-soft);
   color: var(--clean-white);
-  border-color: var(--charcoal-soft);
+  border-color: var(--heritage-blue-soft);
 }
 
 .btn-secondary:hover {
-  background: var(--charcoal);
-  border-color: var(--charcoal);
+  background: var(--heritage-blue);
+  border-color: var(--heritage-blue);
   color: var(--clean-white);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--charcoal);
+  color: var(--heritage-blue);
   border-color: var(--border);
 }
 
 .btn-outline:hover {
-  background: var(--charcoal);
+  background: var(--heritage-blue);
   color: var(--clean-white);
-  border-color: var(--charcoal);
+  border-color: var(--heritage-blue);
 }
 
 /* Cards */

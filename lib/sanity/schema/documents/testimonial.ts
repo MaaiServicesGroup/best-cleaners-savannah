@@ -47,7 +47,6 @@ export const testimonial = defineType({
       options: {
         list: [
           { title: "Google", value: "google" },
-          { title: "Yelp", value: "yelp" },
           { title: "Facebook", value: "facebook" },
           { title: "Direct", value: "direct" },
         ],

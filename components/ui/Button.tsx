@@ -3,7 +3,7 @@ import Link from "next/link";
 import { forwardRef } from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "outline" | "ghost" | "glass" | "glass-outline";
+  variant?: "primary" | "secondary" | "outline" | "ghost" | "glass" | "glass-outline" | "burgundy";
   size?: "sm" | "md" | "lg";
   href?: string;
   children: React.ReactNode;
@@ -22,14 +22,15 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
     );
     
-    // All CTAs: black/charcoal background with WHITE text - no exceptions
+    // Primary CTAs: deep navy (heritage-blue) with white text
     const variants = {
-      primary: "bg-charcoal border-2 border-charcoal hover:bg-charcoal-soft hover:border-charcoal-soft",
-      secondary: "bg-charcoal-soft border-2 border-charcoal-soft hover:bg-charcoal hover:border-charcoal",
-      outline: "bg-transparent border-2 border-charcoal hover:bg-charcoal",
+      primary: "bg-heritage-blue border-2 border-heritage-blue hover:bg-heritage-blue-hover hover:border-heritage-blue-hover",
+      secondary: "bg-heritage-blue-soft border-2 border-heritage-blue-soft hover:bg-heritage-blue hover:border-heritage-blue",
+      outline: "bg-transparent border-2 border-heritage-blue hover:bg-heritage-blue",
       ghost: "bg-transparent border-2 border-transparent hover:bg-warm-cream hover:border-warm-cream",
-      glass: "bg-charcoal/90 backdrop-blur-sm border-2 border-white/20 hover:bg-charcoal hover:border-white/40",
+      glass: "bg-heritage-blue/90 backdrop-blur-sm border-2 border-white/20 hover:bg-heritage-blue hover:border-white/40",
       "glass-outline": "bg-white/10 backdrop-blur-sm border-2 border-white/50 hover:bg-white/20 hover:border-white/70",
+      burgundy: "bg-[#722F37] border-2 border-[#722F37] hover:bg-[#5C262D] hover:border-[#5C262D]",
     };
     
     const sizes = {
@@ -38,9 +39,9 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       lg: "px-8 py-4 text-base",
     };
     
-    // Determine text color - white for most variants, charcoal for ghost/outline default state
+    // Determine text color - white for most variants, navy for ghost/outline default state
     const needsDarkText = variant === "ghost" || variant === "outline";
-    const textColorStyle = needsDarkText ? { color: '#2B2B2B' } : { color: '#FFFFFF' };
+    const textColorStyle = needsDarkText ? { color: '#2F4699' } : { color: '#FFFFFF' };
     
     const classes = cn(baseStyles, variants[variant], sizes[size], className);
     

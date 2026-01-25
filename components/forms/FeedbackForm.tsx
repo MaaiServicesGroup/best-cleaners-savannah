@@ -6,8 +6,6 @@ import { Button } from "@/components/ui";
 // Google Place ID for Best Cleaners Savannah - used for review links
 const GOOGLE_PLACE_ID = process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "YOUR_PLACE_ID";
 const GOOGLE_REVIEW_URL = `https://search.google.com/local/writereview?placeid=${GOOGLE_PLACE_ID}`;
-// Update this with actual Yelp business URL
-const YELP_URL = "https://www.yelp.com/biz/best-cleaners-savannah";
 
 interface FeedbackFormProps {
   formspreeId?: string;
@@ -51,10 +49,10 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
         <h3 className="font-display text-xl font-semibold text-charcoal mb-2">Thank You!</h3>
         <p className="text-muted mb-6">We&apos;re so glad you had a great experience with us!</p>
         <p className="text-sm text-muted mb-4">
-          Would you consider sharing your experience on Google or Yelp? It helps other 
+          Would you consider sharing your experience on Google? It helps other 
           Savannah residents find quality dry cleaning.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-3">
+        <div className="flex justify-center">
           <a
             href={GOOGLE_REVIEW_URL}
             target="_blank"
@@ -62,14 +60,6 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
             className="btn btn-secondary text-sm"
           >
             Review on Google
-          </a>
-          <a
-            href={YELP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline text-sm"
-          >
-            Review on Yelp
           </a>
         </div>
       </div>

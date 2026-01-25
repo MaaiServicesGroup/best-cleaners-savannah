@@ -12,34 +12,34 @@ export const metadata: Metadata = {
 
 const industries = [
   {
-    title: "Restaurants & Hospitality",
-    description: "Tablecloths, napkins, chef coats, and server uniforms cleaned to the highest standards.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/restaurant.jpg",
-    imageAlt: "Restaurant dining setting",
-  },
-  {
-    title: "Hotels & Lodging",
-    description: "Linens, towels, staff uniforms, and guest laundry handled with care and efficiency.",
+    title: "Hotels & Hospitality",
+    description: "Linens, towels, staff uniforms, and guest laundry handled with care. We serve hotels, resorts, and bed-and-breakfasts throughout the Savannah area.",
     image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/wedding table setting.jpg",
     imageAlt: "Elegant table setting with clean linens",
+  },
+  {
+    title: "Uniform Services",
+    description: "Professional uniform cleaning for corporate offices, restaurants, and service industries. Consistent quality to keep your team looking sharp.",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/mens uniform shirts.jpg",
+    imageAlt: "Professional uniform shirts",
+  },
+  {
+    title: "Military & Government",
+    description: "Trusted by Hunter Army Airfield and local government offices. We understand the standards required for military dress uniforms and official attire.",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/military uniform.jpg",
+    imageAlt: "Military uniform care",
+  },
+  {
+    title: "Restaurants & Food Service",
+    description: "Tablecloths, napkins, chef coats, and server uniforms cleaned to the highest standards for Savannah's dining establishments.",
+    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/restaurant.jpg",
+    imageAlt: "Restaurant dining setting",
   },
   {
     title: "Medical & Healthcare",
     description: "Lab coats, scrubs, and medical textiles cleaned according to strict hygiene standards.",
     image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/clean suit.jpg",
     imageAlt: "Clean professional attire",
-  },
-  {
-    title: "Spas & Salons",
-    description: "Robes, towels, and capes that stay fresh and presentable for your clients.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/special fabrics.jpg",
-    imageAlt: "Special fabric care",
-  },
-  {
-    title: "Corporate Offices",
-    description: "Executive attire, company uniforms, and office textiles professionally maintained.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/mens uniform shirts.jpg",
-    imageAlt: "Professional uniform shirts",
   },
   {
     title: "Schools & Organizations",
@@ -75,8 +75,8 @@ export default function CommercialDryCleaningPage() {
               Trusted by Savannah Businesses Since 1910
             </Heading>
             <p className="text-muted text-lg">
-              For over a century, Savannah&apos;s restaurants, hotels, medical facilities, and 
-              businesses have trusted Best Cleaners for their commercial cleaning needs. We 
+              For over a century, Savannah&apos;s hotels, uniform-dependent businesses, and military 
+              personnel have trusted Best Cleaners for their commercial cleaning needs. We 
               understand that consistent quality and reliable service are essential for your operations.
             </p>
           </div>
