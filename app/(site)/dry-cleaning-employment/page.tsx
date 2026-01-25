@@ -57,8 +57,22 @@ export default function EmploymentPage() {
         breadcrumb={[{ label: "Careers", href: "/dry-cleaning-employment/" }]}
       />
 
-      {/* Why Work Here */}
+      {/* Staff Image */}
       <Section bg="white">
+        <Container>
+          <div className="relative aspect-[21/9] overflow-hidden border border-border">
+            <Image
+              src="/images/Staff.jpg"
+              alt="The Best Cleaners team"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </Container>
+      </Section>
+
+      {/* Why Work Here */}
+      <Section bg="cream">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -91,7 +105,7 @@ export default function EmploymentPage() {
       </Section>
 
       {/* Open Positions */}
-      <Section bg="cream">
+      <Section bg="white">
         <Container>
           <div className="text-center mb-12">
             <Heading as="h2" className="mb-4">
@@ -117,7 +131,7 @@ export default function EmploymentPage() {
       </Section>
 
       {/* Application Form */}
-      <Section bg="white">
+      <Section bg="cream">
         <Container size="narrow">
           <div className="text-center mb-12">
             <Heading as="h2" className="mb-4">

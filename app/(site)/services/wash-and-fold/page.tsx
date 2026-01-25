@@ -24,23 +24,33 @@ export default function WashAndFoldPage() {
 
       <Section bg="white">
         <Container>
-          <div className="max-w-3xl">
-            <Heading as="h2" className="mb-6">
-              Laundry Day, Done for You
-            </Heading>
-            <div className="prose text-muted">
-              <p>
-                Life is busy. Between work, family, and everything else, laundry can pile up 
-                faster than you can fold it. Our wash and fold service takes that burden off 
-                your shoulders.
-              </p>
-              <p>
-                Simply drop off your everyday laundry—towels, sheets, casual clothes, and 
-                more—and we'll return it clean, fresh, and neatly folded. It's like having 
-                your own laundry staff without the overhead. Our wash and fold service is 
-                especially popular with busy students at SCAD and Savannah State, seniors 
-                looking for convenience, and anyone who'd rather spend their weekends elsewhere.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Heading as="h2" className="mb-6">
+                Laundry Day, Done for You
+              </Heading>
+              <div className="prose text-muted">
+                <p>
+                  Life is busy. Between work, family, and everything else, laundry can pile up 
+                  faster than you can fold it. Our wash and fold service takes that burden off 
+                  your shoulders.
+                </p>
+                <p>
+                  Simply drop off your everyday laundry—towels, sheets, casual clothes, and 
+                  more—and we'll return it clean, fresh, and neatly folded. It's like having 
+                  your own laundry staff without the overhead. Our wash and fold service is 
+                  especially popular with busy students at SCAD and Savannah State, seniors 
+                  looking for convenience, and anyone who'd rather spend their weekends elsewhere.
+                </p>
+              </div>
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden border border-border">
+              <Image
+                src="/images/FoldedClothes.jpg"
+                alt="Neatly folded clothes from our wash and fold service"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </Container>
