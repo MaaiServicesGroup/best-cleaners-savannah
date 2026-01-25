@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { ServiceGrid } from "@/components/sections/ServiceGrid";
+import { ServiceHighlights } from "@/components/sections/ServiceHighlights";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { LocationsPreview } from "@/components/sections/LocationsPreview";
@@ -97,14 +98,17 @@ export default function HomePage() {
         backgroundImage="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaned suits.jpg"
       />
 
+      {/* Same-Day Service Banner */}
+      <SameDayBanner />
+
       {/* Why Choose Us */}
       <WhyChooseUs />
 
       {/* Services Grid */}
       <ServiceGrid />
 
-      {/* Same-Day Service Banner */}
-      <SameDayBanner />
+      {/* Service Highlights */}
+      <ServiceHighlights />
 
       {/* Testimonials */}
       <Testimonials />
