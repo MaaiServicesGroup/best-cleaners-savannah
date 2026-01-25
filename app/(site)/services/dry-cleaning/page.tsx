@@ -105,7 +105,8 @@ export default function DryCLeaningPage() {
               <p className="text-muted mb-8">
                 If it says "dry clean only" on the label, we can handle it. But we also 
                 recommend dry cleaning for many items that could technically be washed at 
-                home—the results are simply superior.
+                home—the results are simply superior. Our gentler cleaning methods protect 
+                specialty fabrics while extending the life of your garments.
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {whatWeDryCLean.map((item) => (

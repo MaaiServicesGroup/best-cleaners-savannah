@@ -39,7 +39,8 @@ export default function WeddingDressPage() {
                 <p>
                   At Best Cleaners, we've preserved thousands of wedding gowns over our 110+ year 
                   history. We understand the emotional significance of these garments and treat 
-                  each one with the utmost care and respect.
+                  each one with the utmost care and respect. We also provide expert care for 
+                  designer gowns, luxury garments, and fine accessories including leather and suede items.
                 </p>
               </div>
             </div>

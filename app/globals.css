@@ -17,6 +17,8 @@
   --heritage-blue-soft: #4A5FA8;   /* Softened blue for accents */
   --heritage-blue-muted: #5A6DB3;  /* Even lighter for backgrounds */
   --heritage-blue-hover: #243875;
+  --burgundy: #722F37;             /* Premium accent for cream backgrounds */
+  --burgundy-hover: #5C262D;
   
   /* Neutral Palette - Expanded for calmer feel */
   --clean-white: #FFFFFF;
@@ -63,6 +65,8 @@
   --color-heritage-blue-soft: var(--heritage-blue-soft);
   --color-heritage-blue-muted: var(--heritage-blue-muted);
   --color-heritage-blue-hover: var(--heritage-blue-hover);
+  --color-burgundy: var(--burgundy);
+  --color-burgundy-hover: var(--burgundy-hover);
   
   /* Colors - Neutrals */
   --color-clean-white: var(--clean-white);

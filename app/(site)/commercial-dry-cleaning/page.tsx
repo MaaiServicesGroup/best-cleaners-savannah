@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 const industries = [
   {
-    title: "Hotels & Hospitality",
-    description: "Linens, towels, staff uniforms, and guest laundry handled with care. We serve hotels, resorts, and bed-and-breakfasts throughout the Savannah area.",
+    title: "Tourism & Hospitality",
+    description: "Supporting Savannah's thriving tourism industry with linen services for hotels, Airbnb hosts, vacation rentals, and bed-and-breakfasts. We also handle restaurant and catering linens for hospitality events.",
     image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/wedding table setting.jpg",
     imageAlt: "Elegant table setting with clean linens",
   },
@@ -36,8 +36,8 @@ const industries = [
     imageAlt: "Restaurant dining setting",
   },
   {
-    title: "Medical & Healthcare",
-    description: "Lab coats, scrubs, and medical textiles cleaned according to strict hygiene standards.",
+    title: "Medical, Spa & Wellness",
+    description: "Lab coats, scrubs, medical textiles, spa linens, salon towels, and gym towels cleaned according to strict hygiene standards.",
     image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/clean suit.jpg",
     imageAlt: "Clean professional attire",
   },
@@ -77,7 +77,8 @@ export default function CommercialDryCleaningPage() {
             <p className="text-muted text-lg">
               For over a century, Savannah&apos;s hotels, uniform-dependent businesses, and military 
               personnel have trusted Best Cleaners for their commercial cleaning needs. We 
-              understand that consistent quality and reliable service are essential for your operations.
+              understand that consistent quality and reliable service are essential for your operations, 
+              and our efficient, modern processes help reduce waste while delivering exceptional results.
             </p>
           </div>
         </Container>
@@ -154,8 +155,58 @@ export default function CommercialDryCleaningPage() {
         </Container>
       </Section>
 
+      {/* Service Model */}
+      <Section bg="cream">
+        <Container>
+          <div className="text-center mb-12">
+            <Heading as="h2" className="mb-4">
+              How We Work With You
+            </Heading>
+            <p className="text-muted max-w-2xl mx-auto">
+              We build lasting partnerships with Savannah businesses through reliable, scalable service.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="text-center">
+              <div className="w-12 h-12 mx-auto bg-heritage-blue/10 text-heritage-blue rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-charcoal mb-2">Recurring Contracts</h3>
+              <p className="text-sm text-muted">
+                Monthly service agreements with predictable billing and priority scheduling.
+              </p>
+            </Card>
+            <Card className="text-center">
+              <div className="w-12 h-12 mx-auto bg-heritage-blue/10 text-heritage-blue rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-charcoal mb-2">Reliable Turnaround</h3>
+              <p className="text-sm text-muted">
+                Consistent delivery schedules you can count on, with rush options when needed.
+              </p>
+            </Card>
+            <Card className="text-center">
+              <div className="w-12 h-12 mx-auto bg-heritage-blue/10 text-heritage-blue rounded-full flex items-center justify-center mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="font-semibold text-charcoal mb-2">Scalable Volume</h3>
+              <p className="text-sm text-muted">
+                From small businesses to enterprise accounts, we grow with your needs.
+              </p>
+            </Card>
+          </div>
+        </Container>
+      </Section>
+
       {/* Inquiry Form */}
-      <Section bg="cream" id="inquiry-form">
+      <Section bg="white" id="inquiry-form">
         <Container size="narrow">
           <div className="text-center mb-12">
             <Heading as="h2" className="mb-4">

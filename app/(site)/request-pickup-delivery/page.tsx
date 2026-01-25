@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const features = [
   {
     title: "Convenient Scheduling",
-    description: "We work around your schedule to find pickup and delivery times that work for you.",
+    description: "We work around your schedule to find pickup and delivery times that work for you. Set up weekly or recurring service for hands-off convenience.",
   },
   {
     title: "Professional Handling",
@@ -54,7 +54,8 @@ export default function RequestPickupDeliveryPage() {
             </Heading>
             <p className="text-muted">
               Fill out the form below and we&apos;ll contact you to discuss pickup and delivery 
-              options that work for your schedule.
+              options that work for your schedule—whether it&apos;s a one-time service or a 
+              recurring arrangement that takes laundry off your to-do list for good.
             </p>
           </div>
 

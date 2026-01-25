@@ -30,7 +30,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       ghost: "bg-transparent border-2 border-transparent hover:bg-warm-cream hover:border-warm-cream",
       glass: "bg-heritage-blue/90 backdrop-blur-sm border-2 border-white/20 hover:bg-heritage-blue hover:border-white/40",
       "glass-outline": "bg-white/10 backdrop-blur-sm border-2 border-white/50 hover:bg-white/20 hover:border-white/70",
-      burgundy: "bg-[#722F37] border-2 border-[#722F37] hover:bg-[#5C262D] hover:border-[#5C262D]",
+      burgundy: "bg-burgundy border-2 border-burgundy hover:bg-burgundy-hover hover:border-burgundy-hover",
     };
     
     const sizes = {

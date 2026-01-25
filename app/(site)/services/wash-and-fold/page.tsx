@@ -36,7 +36,9 @@ export default function WashAndFoldPage() {
               <p>
                 Simply drop off your everyday laundry—towels, sheets, casual clothes, and 
                 more—and we'll return it clean, fresh, and neatly folded. It's like having 
-                your own laundry staff without the overhead.
+                your own laundry staff without the overhead. Our wash and fold service is 
+                especially popular with busy students at SCAD and Savannah State, seniors 
+                looking for convenience, and anyone who'd rather spend their weekends elsewhere.
               </p>
             </div>
           </div>

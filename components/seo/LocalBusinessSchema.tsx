@@ -60,7 +60,9 @@ export function LocalBusinessSchema({
       },
     ],
     sameAs: [
-      "https://www.facebook.com/bestcleanerssavannah",
+      "https://www.facebook.com/2373671256198544",
+      "https://www.instagram.com/bestcleanerssavannah/",
+      "https://x.com/bestsavannahga",
     ],
   };
 

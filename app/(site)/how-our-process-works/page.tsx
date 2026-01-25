@@ -79,7 +79,7 @@ const steps = [
   {
     number: "07",
     title: "Packaging & Ready",
-    description: "Clean items are carefully packaged—on hangers with protective bags, or folded and wrapped—and organized for easy pickup. You'll receive notification when your order is ready.",
+    description: "Clean items are carefully packaged—on hangers with protective bags, or folded and wrapped—and organized for easy pickup. You'll receive notification when your order is ready. Ask about our reusable garment bags for regular customers.",
     details: [
       "Protective packaging",
       "Organized by customer",
