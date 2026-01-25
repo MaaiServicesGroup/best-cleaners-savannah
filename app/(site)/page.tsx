@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import { Hero } from "@/components/sections/Hero";
 import { ServiceGrid } from "@/components/sections/ServiceGrid";
 import { ServiceHighlights } from "@/components/sections/ServiceHighlights";
@@ -110,19 +109,6 @@ export default function HomePage() {
 
       {/* Service Highlights */}
       <ServiceHighlights />
-
-      {/* FAQ CTA */}
-      <div className="bg-warm-cream py-6 text-center">
-        <p className="text-muted text-sm">
-          Have questions about our services?{" "}
-          <Link
-            href="/faq/"
-            className="text-heritage-blue hover:text-heritage-blue-hover transition-colors font-medium"
-          >
-            View our FAQs
-          </Link>
-        </p>
-      </div>
 
       {/* Testimonials */}
       <Testimonials />

@@ -112,9 +112,15 @@ export function ServiceGrid({ showTitle = true, limit }: ServiceGridProps) {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="flex flex-wrap justify-center gap-4 mt-12">
           <Button href="/best-cleaners-savannah-services/" variant="primary" size="lg">
             View All Services
+          </Button>
+          <Button href="/how-our-process-works/" variant="outline" size="lg">
+            Learn About Our Process
+          </Button>
+          <Button href="/faq/" variant="outline" size="lg">
+            FAQs
           </Button>
         </div>
       </Container>
