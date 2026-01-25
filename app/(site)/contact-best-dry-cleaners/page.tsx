@@ -104,7 +104,7 @@ export default function ContactPage() {
                   Looking for Employment?
                 </h3>
                 <p className="text-sm text-muted mb-4">
-                  We&apos;re always looking for dedicated team members to join our family.
+                  We&apos;re always looking for dedicated team members to join our team.
                 </p>
                 <a
                   href="/dry-cleaning-employment/"
