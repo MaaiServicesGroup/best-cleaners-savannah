@@ -17,6 +17,7 @@
     "next-sanity": "^12.0.12",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-google-reviews": "^1.8.0",
     "sanity": "^5.4.0",
     "tailwind-merge": "^3.4.0"
   },

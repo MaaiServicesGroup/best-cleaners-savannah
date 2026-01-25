@@ -3,6 +3,12 @@
 import { useState } from "react";
 import { Button } from "@/components/ui";
 
+// Google Place ID for Best Cleaners Savannah - used for review links
+const GOOGLE_PLACE_ID = process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "YOUR_PLACE_ID";
+const GOOGLE_REVIEW_URL = `https://search.google.com/local/writereview?placeid=${GOOGLE_PLACE_ID}`;
+// Update this with actual Yelp business URL
+const YELP_URL = "https://www.yelp.com/biz/best-cleaners-savannah";
+
 interface FeedbackFormProps {
   formspreeId?: string;
 }
@@ -50,7 +56,7 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-3">
           <a
-            href="https://google.com/maps"
+            href={GOOGLE_REVIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-secondary text-sm"
@@ -58,7 +64,7 @@ export function FeedbackForm({ formspreeId = "placeholder" }: FeedbackFormProps)
             Review on Google
           </a>
           <a
-            href="https://yelp.com"
+            href={YELP_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline text-sm"

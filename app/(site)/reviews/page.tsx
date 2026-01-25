@@ -1,97 +1,22 @@
 import { Metadata } from "next";
 import { PageHero } from "@/components/sections/Hero";
 import { Container, Section } from "@/components/layout";
-import { Heading, Card, Button } from "@/components/ui";
-import { starRating } from "@/lib/utils";
+import { Heading, Button } from "@/components/ui";
+import { GoogleReviews, GoogleRatingBadge } from "@/components/sections";
 
 export const metadata: Metadata = {
   title: "Customer Reviews | Best Cleaners Savannah",
-  description: "Read what our customers say about Best Cleaners & Laundry. 4.9 star rating with over 250 reviews. Savannah's trusted dry cleaner since 1910.",
+  description: "Read what our customers say about Best Cleaners & Laundry. Real reviews from Google. Savannah's trusted dry cleaner since 1910.",
 };
 
-// Placeholder reviews - in production, these would come from Sanity or Google API
-const reviews = [
-  {
-    id: "1",
-    customerName: "Margaret S.",
-    location: "Ardsley Park",
-    quote: "I've been bringing my clothes here for over 20 years. The quality is consistently excellent, and the staff treats every garment like it's their own. True professionals who take pride in their work.",
-    rating: 5,
-    source: "google",
-    date: "2024-12-15",
-  },
-  {
-    id: "2",
-    customerName: "Robert M.",
-    location: "Historic District",
-    quote: "Best Cleaners saved my grandfather's vintage suit that I thought was beyond repair. Their attention to detail and care for delicate fabrics is unmatched in Savannah. Worth every penny.",
-    rating: 5,
-    source: "yelp",
-    date: "2024-11-28",
-  },
-  {
-    id: "3",
-    customerName: "Jennifer L.",
-    location: "Pooler",
-    quote: "The convenience and quality keep me coming back. Even living in Pooler, it's worth the trip to their Waters Avenue location. My work uniforms have never looked better.",
-    rating: 5,
-    source: "google",
-    date: "2024-11-15",
-  },
-  {
-    id: "4",
-    customerName: "David W.",
-    location: "Midtown",
-    quote: "As a business owner, I need my suits to look impeccable. Best Cleaners delivers every single time. Over a century of experience really shows in their work. Highly recommend.",
-    rating: 5,
-    source: "direct",
-    date: "2024-10-30",
-  },
-  {
-    id: "5",
-    customerName: "Sarah K.",
-    location: "Victorian District",
-    quote: "They cleaned and preserved my wedding dress beautifully. It's now stored perfectly for my future daughter. The care and attention they showed made such a meaningful difference.",
-    rating: 5,
-    source: "google",
-    date: "2024-10-20",
-  },
-  {
-    id: "6",
-    customerName: "Michael T.",
-    location: "Georgetown",
-    quote: "Fair prices, friendly staff, and exceptional results. This is how dry cleaning should be. A true Savannah institution that hasn't lost its touch over the years.",
-    rating: 5,
-    source: "yelp",
-    date: "2024-10-05",
-  },
-  {
-    id: "7",
-    customerName: "Patricia B.",
-    location: "Thunderbolt",
-    quote: "Switched to Best Cleaners after being disappointed elsewhere. What a difference! They actually care about getting stains out properly and my clothes always smell fresh.",
-    rating: 5,
-    source: "google",
-    date: "2024-09-22",
-  },
-  {
-    id: "8",
-    customerName: "James R.",
-    location: "Starland District",
-    quote: "The Abercorn location is super convenient and the staff is always helpful. They've helped me with everything from regular dry cleaning to getting red wine out of a silk tie.",
-    rating: 4,
-    source: "google",
-    date: "2024-09-10",
-  },
-];
-
-const stats = {
-  averageRating: 4.9,
-  totalReviews: 250,
-  fiveStarPercentage: 94,
-};
+// Google Place ID for Best Cleaners Savannah
+// Find yours at: https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder
+const GOOGLE_PLACE_ID = process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID || "YOUR_PLACE_ID";
 
 export default function ReviewsPage() {
+  const reviewUrl = `https://search.google.com/local/writereview?placeid=${GOOGLE_PLACE_ID}`;
+  const mapsUrl = `https://www.google.com/maps/place/?q=place_id:${GOOGLE_PLACE_ID}`;
+
   return (
     <>
       <PageHero
@@ -100,60 +25,34 @@ export default function ReviewsPage() {
         breadcrumb={[{ label: "Reviews", href: "/reviews/" }]}
       />
 
-      {/* Stats Banner */}
+      {/* Rating Summary Banner */}
       <Section bg="heritage-blue" padding="sm">
         <Container>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 text-clean-white">
-            <div className="text-center">
-              <div className="font-display text-5xl font-bold">{stats.averageRating}</div>
-              <div className="text-clean-white/80 mt-1">Average Rating</div>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-clean-white">
+            <div className="flex items-center gap-3">
+              <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+              </svg>
+              <span className="text-xl font-semibold">Real reviews from Google</span>
             </div>
-            <div className="text-center">
-              <div className="font-display text-5xl font-bold">{stats.totalReviews}+</div>
-              <div className="text-clean-white/80 mt-1">Customer Reviews</div>
-            </div>
-            <div className="text-center">
-              <div className="font-display text-5xl font-bold">{stats.fiveStarPercentage}%</div>
-              <div className="text-clean-white/80 mt-1">5-Star Reviews</div>
-            </div>
+            <p className="text-clean-white/80 text-center md:text-left">
+              All reviews shown are verified Google reviews from real customers.
+            </p>
           </div>
         </Container>
       </Section>
 
-      {/* Reviews Grid */}
+      {/* Live Google Reviews Feed */}
       <Section bg="white">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {reviews.map((review) => (
-              <Card key={review.id}>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-best-red text-lg tracking-wider">
-                    {starRating(review.rating)}
-                  </span>
-                  <span className="text-xs text-muted uppercase tracking-wider">
-                    {review.source === "google" && "Google"}
-                    {review.source === "yelp" && "Yelp"}
-                    {review.source === "direct" && "Direct"}
-                  </span>
-                </div>
-                <blockquote className="text-charcoal leading-relaxed mb-6">
-                  &ldquo;{review.quote}&rdquo;
-                </blockquote>
-                <div className="flex items-center justify-between pt-4 border-t border-border">
-                  <div>
-                    <p className="font-semibold text-charcoal">{review.customerName}</p>
-                    <p className="text-sm text-muted">{review.location}</p>
-                  </div>
-                  <p className="text-sm text-muted">
-                    {new Date(review.date).toLocaleDateString("en-US", {
-                      month: "short",
-                      year: "numeric",
-                    })}
-                  </p>
-                </div>
-              </Card>
-            ))}
+          <div className="mb-8 text-center">
+            <GoogleRatingBadge />
           </div>
+          
+          <GoogleReviews maxItems={12} />
         </Container>
       </Section>
 
@@ -171,21 +70,21 @@ export default function ReviewsPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button
-                href="https://google.com/maps"
+                href={reviewUrl}
                 variant="secondary"
               >
-                Review on Google
+                Leave a Google Review
               </Button>
               <Button
-                href="https://yelp.com"
+                href={mapsUrl}
                 variant="outline"
               >
-                Review on Yelp
+                View on Google Maps
               </Button>
             </div>
             <p className="text-sm text-muted mt-6">
               Have concerns or feedback? Please{" "}
-              <a href="/customer-feedback/" className="text-heritage-blue hover:text-best-red">
+              <a href="/customer-feedback/" className="text-heritage-blue hover:text-best-red transition-colors">
                 contact us directly
               </a>{" "}
               so we can make it right.
