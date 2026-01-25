@@ -52,7 +52,7 @@ export default function ReviewsPage() {
             <GoogleRatingBadge />
           </div>
           
-          <GoogleReviews maxItems={12} />
+          <GoogleReviews />
         </Container>
       </Section>
 

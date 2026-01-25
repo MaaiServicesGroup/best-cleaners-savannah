@@ -7,28 +7,24 @@ import { GoogleReviews, GoogleRatingBadge } from "./GoogleReviews";
 interface TestimonialsProps {
   title?: string;
   subtitle?: string;
-  /** Show embedded reviews preview (vs just the rating badge) */
-  showReviewsPreview?: boolean;
-  /** Number of reviews to show in preview */
-  previewCount?: number;
+  /** Show embedded reviews (vs just the rating badge with CTA) */
+  showReviews?: boolean;
 }
 
 /**
  * Testimonials section that displays live Google Reviews
- * Shows a rating badge and optionally a preview of reviews
- * Links to the full /reviews page
+ * Shows a rating badge and links to the full /reviews page
  */
 export function Testimonials({ 
   title = "What Our Customers Say", 
   subtitle = "Real reviews from our customers, straight from Google.",
-  showReviewsPreview = true,
-  previewCount = 3
+  showReviews = false
 }: TestimonialsProps) {
   return (
     <Section bg="cream">
       <Container>
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <Heading as="h2" className="mb-4">
             {title}
           </Heading>
@@ -37,24 +33,22 @@ export function Testimonials({
           </Subheading>
           
           {/* Google Rating Badge */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-8">
             <GoogleRatingBadge />
           </div>
-        </div>
 
-        {/* Reviews Preview */}
-        {showReviewsPreview && (
-          <div className="mb-12">
-            <GoogleReviews maxItems={previewCount} />
-          </div>
-        )}
-
-        {/* CTA to full reviews page */}
-        <div className="text-center">
+          {/* CTA to full reviews page */}
           <Button href="/reviews/" variant="outline">
             Read All Reviews
           </Button>
         </div>
+
+        {/* Full Reviews Embed (optional) */}
+        {showReviews && (
+          <div className="mt-12">
+            <GoogleReviews />
+          </div>
+        )}
       </Container>
     </Section>
   );
