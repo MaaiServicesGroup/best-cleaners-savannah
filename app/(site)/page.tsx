@@ -97,14 +97,14 @@ export default function HomePage() {
         backgroundImage="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaned suits.jpg"
       />
 
-      {/* Same-Day Service Banner */}
-      <SameDayBanner />
-
       {/* Why Choose Us */}
       <WhyChooseUs />
 
       {/* Services Grid */}
       <ServiceGrid />
+
+      {/* Same-Day Service Banner */}
+      <SameDayBanner />
 
       {/* Testimonials */}
       <Testimonials />
