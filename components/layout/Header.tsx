@@ -137,13 +137,15 @@ export function Header() {
               </div>
             ))}
             
-            {/* Careers Link - inside nav container for proper alignment */}
-            <Link
-              href="/dry-cleaning-employment/"
-              className="nav-link text-charcoal font-medium text-sm hover:text-charcoal-soft transition-colors py-2"
-            >
-              Careers
-            </Link>
+            {/* Careers Link - wrapped in div for consistent alignment */}
+            <div className="relative">
+              <Link
+                href="/dry-cleaning-employment/"
+                className="nav-link text-charcoal font-medium text-sm hover:text-charcoal-soft transition-colors py-2"
+              >
+                Careers
+              </Link>
+            </div>
           </div>
 
           {/* CTA Button */}
