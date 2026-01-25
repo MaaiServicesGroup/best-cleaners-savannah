@@ -136,15 +136,15 @@ export function Header() {
                 )}
               </div>
             ))}
+            
+            {/* Careers Link - inside nav container for proper alignment */}
+            <Link
+              href="/dry-cleaning-employment/"
+              className="nav-link text-charcoal font-medium text-sm hover:text-charcoal-soft transition-colors py-2"
+            >
+              Careers
+            </Link>
           </div>
-
-          {/* Careers Link - Right justified, separate from main nav */}
-          <Link
-            href="/dry-cleaning-employment/"
-            className="hidden lg:block nav-link text-charcoal font-medium text-sm hover:text-charcoal-soft transition-colors py-2 ml-8"
-          >
-            Careers
-          </Link>
 
           {/* CTA Button */}
           <div className="hidden lg:block ml-6">
