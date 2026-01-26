@@ -11,7 +11,7 @@ const pageData = {
   neighborhood: "Ardsley Park Area",
   pageType: "neighborhood" as const,
   description: "Searching for reliable dry cleaners near Ardsley Park? Best Cleaners has served this area of Savannah for over a century, providing convenient access and exceptional garment care.",
-  heroImage: "/images/GeneratedPhotosBC/HomepageImage.jpeg",
+  heroImage: "/images/GeneratedPhotosBC/morefamilytimebecauseclothesareclean.jpeg",
   heroImageAlt: "Historic Savannah neighborhood",
   proximityStatement: "Whether you're on the north side of Ardsley Park near Victory Drive or the south side toward DeRenne Avenue, both of our locations are easily accessible within 10-15 minutes.",
   content: [

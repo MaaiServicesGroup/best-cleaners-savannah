@@ -155,11 +155,11 @@ export default function LocationsPage() {
       {/* Savannah Image Banner */}
       <Section bg="cream">
         <Container>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="grid grid-cols-2 gap-4 mb-12">
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
                 src="/images/GeneratedPhotosBC/Pickup&dropoffatstore.jpeg"
-                alt="River Street, Savannah"
+                alt="Convenient pickup and dropoff at our store"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -167,23 +167,7 @@ export default function LocationsPage() {
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
                 src="/images/GeneratedPhotosBC/Clean&foldedInStore.jpeg"
-                alt="Forsyth Fountain, Savannah"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square overflow-hidden border border-border">
-              <Image
-                src="/images/GeneratedPhotosBC/Inby9outby5.jpeg"
-                alt="Savannah Trolley"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative aspect-square overflow-hidden border border-border">
-              <Image
-                src="/images/GeneratedPhotosBC/morefamilytimebecauseclothesareclean.jpeg"
-                alt="The Basilica in Savannah"
+                alt="Clean and folded clothes ready for pickup"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />

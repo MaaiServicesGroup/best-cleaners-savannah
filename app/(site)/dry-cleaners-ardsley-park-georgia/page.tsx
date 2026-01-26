@@ -11,7 +11,7 @@ const pageData = {
   neighborhood: "Ardsley Park",
   pageType: "neighborhood" as const,
   description: "Dedicated dry cleaning services for the Ardsley Park neighborhood. Known for its beautiful homes and tree-canopied streets, Ardsley Park deserves garment care that matches its elegance.",
-  heroImage: "/images/GeneratedPhotosBC/HomepageImage.jpeg",
+  heroImage: "/images/GeneratedPhotosBC/Inby9outby5.jpeg",
   heroImageAlt: "Beautiful park in Savannah with tree-lined paths",
   proximityStatement: "Ardsley Park residents enjoy quick access to both of our locations. Our Abercorn Street store is particularly convenient, located just minutes south along the Abercorn corridor.",
   content: [

@@ -11,7 +11,7 @@ const pageData = {
   neighborhood: "Starland District",
   pageType: "district" as const,
   description: "Expert dry cleaning services for the vibrant Starland District. We understand the creative community's unique needs and provide quality care for everything from vintage finds to professional attire.",
-  heroImage: "/images/GeneratedPhotosBC/HomepageImage.jpeg",
+  heroImage: "/images/GeneratedPhotosBC/morefamilytimebecauseclothesareclean.jpeg",
   heroImageAlt: "Beautiful Savannah street with Spanish moss",
   proximityStatement: "The Starland District is conveniently located between our two stores. Our Waters Avenue location is just north, while Abercorn Street is a quick drive south—perfect for stopping by during your Starland adventures.",
   content: [

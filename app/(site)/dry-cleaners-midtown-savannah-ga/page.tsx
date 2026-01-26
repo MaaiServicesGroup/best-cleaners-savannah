@@ -11,7 +11,7 @@ const pageData = {
   neighborhood: "Midtown Savannah",
   pageType: "neighborhood" as const,
   description: "Quality dry cleaning services for Midtown Savannah. Whether you work in the medical district, shop at the mall, or call Midtown home, we're conveniently located to serve you.",
-  heroImage: "/images/GeneratedPhotosBC/HomepageImage.jpeg",
+  heroImage: "/images/GeneratedPhotosBC/Inby9outby5.jpeg",
   heroImageAlt: "Downtown Savannah cityscape",
   proximityStatement: "Our Abercorn Street location sits right in the heart of Midtown, making us incredibly convenient for anyone in this bustling area of Savannah.",
   content: [
