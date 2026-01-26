@@ -3,6 +3,7 @@ import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/utils";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/next";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -72,6 +73,7 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${montserrat.variable}`}>
       <body className="font-body antialiased bg-warm-cream text-charcoal">
         <GoogleAnalytics />
+        <Analytics />
         {children}
       </body>
     </html>
