@@ -195,7 +195,8 @@ export default function FAQPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact-best-dry-cleaners/"
-                className="btn-premium inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-wide rounded-lg bg-clean-white text-charcoal hover:bg-warm-cream transition-all duration-200"
+                className="btn-premium inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold uppercase tracking-wide rounded-lg bg-clean-white hover:bg-warm-cream transition-all duration-200"
+                style={{ color: '#2B2B2B' }}
               >
                 Contact Us
               </Link>

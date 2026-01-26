@@ -22,6 +22,7 @@ const footerLinks = {
   ],
   support: [
     { name: "Contact Us", href: "/contact-best-dry-cleaners/" },
+    { name: "FAQ", href: "/faq/" },
     { name: "Customer Reviews", href: "/reviews/" },
     { name: "Customer Feedback", href: "/customer-feedback/" },
     { name: "Request Pickup", href: "/request-pickup-delivery/" },
