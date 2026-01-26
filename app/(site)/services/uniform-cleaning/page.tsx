@@ -44,7 +44,7 @@ export default function UniformCleaningPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/mens uniform shirts.jpg"
+                src="/images/GeneratedPhotosBC/CorporateUniforms.jpeg"
                 alt="Professional uniform shirts cleaned and pressed"
                 fill
                 className="object-cover"
@@ -66,7 +66,7 @@ export default function UniformCleaningPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/restaurant.jpg"
+                  src="/images/GeneratedPhotosBC/Chefcoatuniform.jpeg"
                   alt="Restaurant uniforms"
                   fill
                   className="object-cover"
@@ -80,7 +80,7 @@ export default function UniformCleaningPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/military uniform.jpg"
+                  src="/images/GeneratedPhotosBC/MilitaryUniform.jpeg"
                   alt="Military uniforms"
                   fill
                   className="object-cover"
@@ -94,7 +94,7 @@ export default function UniformCleaningPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/school band.jpg"
+                  src="/images/GeneratedPhotosBC/BandUniforms.jpeg"
                   alt="School band uniforms"
                   fill
                   className="object-cover"
@@ -108,7 +108,7 @@ export default function UniformCleaningPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/clean suit.jpg"
+                  src="/images/GeneratedPhotosBC/ProfessionalWorkuniform.jpeg"
                   alt="Corporate uniforms"
                   fill
                   className="object-cover"

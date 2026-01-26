@@ -158,7 +158,7 @@ export default function LocationsPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/river street.jpg"
+                src="/images/GeneratedPhotosBC/Pickup&dropoffatstore.jpeg"
                 alt="River Street, Savannah"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -166,7 +166,7 @@ export default function LocationsPage() {
             </div>
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/forsyth fountain.jpg"
+                src="/images/GeneratedPhotosBC/Clean&foldedInStore.jpeg"
                 alt="Forsyth Fountain, Savannah"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -174,7 +174,7 @@ export default function LocationsPage() {
             </div>
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/savannah trolly.jpg"
+                src="/images/GeneratedPhotosBC/Inby9outby5.jpeg"
                 alt="Savannah Trolley"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -182,7 +182,7 @@ export default function LocationsPage() {
             </div>
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/the basilica savannah.jpg"
+                src="/images/GeneratedPhotosBC/morefamilytimebecauseclothesareclean.jpeg"
                 alt="The Basilica in Savannah"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"

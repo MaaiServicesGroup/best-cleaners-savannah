@@ -11,7 +11,7 @@ const pageData = {
   neighborhood: "Victorian District",
   pageType: "district" as const,
   description: "Expert dry cleaning and laundry services for the Victorian District neighborhood. From the tree-lined streets near Forsyth Park to the charming homes along Bull Street, we serve this beautiful area with pride.",
-  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/savannah street homes.jpg",
+  heroImage: "/images/GeneratedPhotosBC/HomepageImage.jpeg",
   heroImageAlt: "Beautiful Victorian homes in Savannah",
   proximityStatement: "The Victorian District is perfectly situated between our two locations. Our Waters Avenue store is just minutes north, while our Abercorn Street location offers easy access from the southern end of the neighborhood.",
   content: [

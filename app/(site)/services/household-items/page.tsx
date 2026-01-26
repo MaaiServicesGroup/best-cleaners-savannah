@@ -55,7 +55,7 @@ export default function HouseholdItemsPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/spring cleaning blankets.jpg"
+                src="/images/GeneratedPhotosBC/cleanhomelinens.jpeg"
                 alt="Fresh clean blankets and comforters"
                 fill
                 className="object-cover"

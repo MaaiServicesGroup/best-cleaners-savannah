@@ -11,7 +11,7 @@ const pageData = {
   neighborhood: "Garden City",
   pageType: "near-city" as const,
   description: "Professional dry cleaning services accessible from Garden City. Our Waters Avenue location is conveniently located for Garden City residents looking for quality garment care.",
-  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/gorgeous savannah.jpg",
+  heroImage: "/images/GeneratedPhotosBC/HomepageImage.jpeg",
   heroImageAlt: "Gorgeous view of Savannah, Georgia",
   proximityStatement: "Garden City residents can reach our Waters Avenue location in about 10 minutes. We're right off the main routes into Savannah, making it easy to stop by on your way to work or errands.",
   content: [

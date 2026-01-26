@@ -50,7 +50,7 @@ export function WhyChooseUs() {
             </p>
             <div className="relative aspect-[16/9] overflow-hidden border border-border rounded-lg">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaning equipment.jpg"
+                src="/images/GeneratedPhotosBC/QualityInspection.jpeg"
                 alt="Professional dry cleaning equipment at Best Cleaners"
                 fill
                 className="object-cover"

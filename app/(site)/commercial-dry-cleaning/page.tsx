@@ -15,37 +15,37 @@ const industries = [
   {
     title: "Tourism & Hospitality",
     description: "Supporting Savannah's thriving tourism industry with linen services for hotels, Airbnb hosts, vacation rentals, and bed-and-breakfasts. We also handle restaurant and catering linens for hospitality events.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/wedding table setting.jpg",
+    image: "/images/GeneratedPhotosBC/CommercialPartnerships.jpeg",
     imageAlt: "Elegant table setting with clean linens",
   },
   {
     title: "Uniform Services",
     description: "Professional uniform cleaning for corporate offices, restaurants, and service industries. Consistent quality to keep your team looking sharp.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/mens uniform shirts.jpg",
+    image: "/images/GeneratedPhotosBC/CorporateUniforms.jpeg",
     imageAlt: "Professional uniform shirts",
   },
   {
     title: "Military & Government",
     description: "Trusted by Hunter Army Airfield and local government offices. We understand the standards required for military dress uniforms and official attire.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/military uniform.jpg",
+    image: "/images/GeneratedPhotosBC/MilitaryUniform.jpeg",
     imageAlt: "Military uniform care",
   },
   {
     title: "Restaurants & Food Service",
     description: "Tablecloths, napkins, chef coats, and server uniforms cleaned to the highest standards for Savannah's dining establishments.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/restaurant.jpg",
+    image: "/images/GeneratedPhotosBC/ChefsCoat.jpeg",
     imageAlt: "Restaurant dining setting",
   },
   {
     title: "Medical, Spa & Wellness",
     description: "Lab coats, scrubs, medical textiles, spa linens, salon towels, and gym towels cleaned according to strict hygiene standards.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/clean suit.jpg",
+    image: "/images/GeneratedPhotosBC/ProfessionalWorkuniform.jpeg",
     imageAlt: "Clean professional attire",
   },
   {
     title: "Schools & Organizations",
     description: "Band uniforms, sports attire, and event clothing for schools and community groups.",
-    image: "/images/collection-Best-Cleaners-zYxuPC2-xFU/school band.jpg",
+    image: "/images/GeneratedPhotosBC/band&teamUniforms.jpeg",
     imageAlt: "School band uniforms",
   },
 ];

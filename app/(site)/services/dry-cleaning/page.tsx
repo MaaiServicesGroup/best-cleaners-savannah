@@ -88,7 +88,7 @@ export default function DryCLeaningPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaning clothes on rack.jpg"
+                src="/images/GeneratedPhotosBC/trendyclothes.jpeg"
                 alt="Professional dry cleaning - freshly cleaned clothes on a rack"
                 fill
                 className="object-cover"
@@ -126,7 +126,7 @@ export default function DryCLeaningPage() {
             <div className="space-y-6">
               <div className="relative aspect-[4/3] overflow-hidden border border-border">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/man in clean suit.jpg"
+                  src="/images/GeneratedPhotosBC/CrispWhiteShirt.jpeg"
                   alt="Man wearing a professionally dry cleaned suit"
                   fill
                   className="object-cover"
@@ -165,7 +165,7 @@ export default function DryCLeaningPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/expert process.jpg"
+                src="/images/GeneratedPhotosBC/CleaningProcessImage.jpeg"
                 alt="Expert dry cleaning process in action"
                 fill
                 className="object-cover"
@@ -202,7 +202,7 @@ export default function DryCLeaningPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[3/2]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaning equipment.jpg"
+                  src="/images/GeneratedPhotosBC/QualityInspection.jpeg"
                   alt="Professional dry cleaning equipment"
                   fill
                   className="object-cover"
@@ -221,7 +221,7 @@ export default function DryCLeaningPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[3/2]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/special fabrics.jpg"
+                  src="/images/GeneratedPhotosBC/beautifulbluedress.jpeg"
                   alt="Special fabric care"
                   fill
                   className="object-cover"
@@ -240,7 +240,7 @@ export default function DryCLeaningPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[3/2]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/expert pressing.jpg"
+                  src="/images/GeneratedPhotosBC/ExpertPressing.jpeg"
                   alt="Expert garment pressing"
                   fill
                   className="object-cover"

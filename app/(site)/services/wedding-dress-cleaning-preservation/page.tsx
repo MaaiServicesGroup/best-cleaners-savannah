@@ -46,7 +46,7 @@ export default function WeddingDressPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/wedding.jpg"
+                src="/images/GeneratedPhotosBC/weddingTux&dress.jpeg"
                 alt="Beautiful wedding dress ready for preservation"
                 fill
                 className="object-cover"
@@ -110,7 +110,7 @@ export default function WeddingDressPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/happy couple wedding.jpg"
+                src="/images/GeneratedPhotosBC/bridelookingatweddingdress.jpeg"
                 alt="Happy couple on their wedding day"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -118,7 +118,7 @@ export default function WeddingDressPage() {
             </div>
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/tuxedo groomsman.jpg"
+                src="/images/GeneratedPhotosBC/weddingdresscleaning.jpeg"
                 alt="Groomsman in tuxedo"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -126,7 +126,7 @@ export default function WeddingDressPage() {
             </div>
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/wedding venue.jpg"
+                src="/images/GeneratedPhotosBC/weddingdresscleaning2.jpeg"
                 alt="Beautiful wedding venue"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -134,7 +134,7 @@ export default function WeddingDressPage() {
             </div>
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/wedding table setting.jpg"
+                src="/images/GeneratedPhotosBC/weddingdresspreservation.jpeg"
                 alt="Elegant wedding table setting"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
@@ -149,7 +149,7 @@ export default function WeddingDressPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/WeddingDresses.jpg"
+                src="/images/GeneratedPhotosBC/bridelookingatweddingdress.jpeg"
                 alt="Wedding dresses ready for preservation"
                 fill
                 className="object-cover"

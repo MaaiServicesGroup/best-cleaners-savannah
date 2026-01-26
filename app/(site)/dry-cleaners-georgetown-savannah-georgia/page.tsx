@@ -11,7 +11,7 @@ const pageData = {
   neighborhood: "Georgetown",
   pageType: "neighborhood" as const,
   description: "Professional dry cleaning services for the Georgetown community. Our Abercorn Street location puts us right in your neighborhood, making quality garment care convenient.",
-  heroImage: "/images/collection-Best-Cleaners-zYxuPC2-xFU/savannah trees.jpg",
+  heroImage: "/images/GeneratedPhotosBC/HomepageImage.jpeg",
   heroImageAlt: "Beautiful tree-lined streets of Savannah",
   proximityStatement: "Georgetown residents are just minutes from our Abercorn Street location. We're right on your way to and from the neighborhood, making it easy to fit dry cleaning into your routine.",
   content: [

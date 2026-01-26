@@ -95,7 +95,7 @@ export default function HomePage() {
         }}
         showBadge={true}
         variant="home"
-        backgroundImage="/images/AnimatedHeroImage.jpeg"
+        backgroundImage="/images/GeneratedPhotosBC/HomepageImage.jpeg"
       />
 
       {/* Same-Day Service Banner */}

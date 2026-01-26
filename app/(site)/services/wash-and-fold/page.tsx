@@ -46,7 +46,7 @@ export default function WashAndFoldPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/FoldedClothes.jpg"
+                src="/images/GeneratedPhotosBC/wash&fold.jpeg"
                 alt="Neatly folded clothes from our wash and fold service"
                 fill
                 className="object-cover"

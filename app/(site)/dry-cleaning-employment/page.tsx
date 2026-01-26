@@ -62,7 +62,7 @@ export default function EmploymentPage() {
         <Container>
           <div className="relative aspect-[21/9] overflow-hidden border border-border">
             <Image
-              src="/images/Staff.jpg"
+              src="/images/GeneratedPhotosBC/CareerPageImage.jpeg"
               alt="The Best Cleaners team"
               fill
               className="object-cover"

@@ -48,7 +48,7 @@ export default function LaundryAndPressPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden border border-border">
               <Image
-                src="/images/collection-Best-Cleaners-zYxuPC2-xFU/mens shirts on a rack.jpg"
+                src="/images/GeneratedPhotosBC/WhitePressedShirtImage.jpeg"
                 alt="Professionally laundered and pressed shirts on a rack"
                 fill
                 className="object-cover"
@@ -64,7 +64,7 @@ export default function LaundryAndPressPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[16/9]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/shirt buttons.jpg"
+                  src="/images/GeneratedPhotosBC/CrispWhiteShirt.jpeg"
                   alt="Close-up of professionally pressed shirt details"
                   fill
                   className="object-cover"
@@ -103,7 +103,7 @@ export default function LaundryAndPressPage() {
             <div className="bg-clean-white border border-border overflow-hidden">
               <div className="relative aspect-[16/9]">
                 <Image
-                  src="/images/collection-Best-Cleaners-zYxuPC2-xFU/expert pressing.jpg"
+                  src="/images/GeneratedPhotosBC/ExpertPressing.jpeg"
                   alt="Expert shirt pressing"
                   fill
                   className="object-cover"

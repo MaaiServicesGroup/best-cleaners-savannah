@@ -133,7 +133,7 @@ export default function WhyChooseUsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-square max-w-md mx-auto lg:mx-0">
               <Image
-                src="/images/The Best Cleaners.png"
+                src="/images/GeneratedPhotosBC/AboutPageImage.jpeg"
                 alt="Best Cleaners & Laundry"
                 fill
                 className="object-contain"

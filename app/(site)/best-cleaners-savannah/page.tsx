@@ -124,7 +124,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[4/3] bg-warm-cream">
               <Image
-                src="/images/The Best Cleaners Cover.jpg"
+                src="/images/GeneratedPhotosBC/AboutPageImage.jpeg"
                 alt="Best Cleaners & Laundry storefront"
                 fill
                 className="object-cover"

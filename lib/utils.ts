@@ -55,7 +55,7 @@ export const siteConfig = {
   name: "Best Cleaners & Laundry",
   description: "Savannah's trusted dry cleaning and laundry service since 1910. Professional garment care with over 100 years of experience.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://bestcleanerssavannah.com",
-  ogImage: "/images/The Best Cleaners Cover.jpg",
+  ogImage: "/images/GeneratedPhotosBC/HomepageImage.jpeg",
   keywords: [
     "dry cleaning",
     "laundry",
