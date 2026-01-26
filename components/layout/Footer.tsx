@@ -83,7 +83,7 @@ export function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com/bestcleanerssavannah/"
+                  href="https://www.instagram.com/bestcleanerssa2?igsh=MWNjdjNucWExa3o1cg%3D%3D&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-lg bg-clean-white/5 text-clean-white/60 hover:text-clean-white hover:bg-clean-white/10 transition-all duration-200"
