@@ -10,6 +10,9 @@ import { formatDate } from "@/lib/utils";
 import { sanityFetch, urlFor } from "@/lib/sanity/client";
 import { blogPostBySlugQuery, blogPostSlugsQuery } from "@/lib/sanity/queries";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type SanityImage = any;
+
 interface BlogPost {
   _id: string;
   title: string;
@@ -17,20 +20,20 @@ interface BlogPost {
   excerpt: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   body: any;
-  featuredImage: string | null;
+  featuredImage: SanityImage | null;
   featuredImageAlt: string | null;
   publishedAt: string;
   author: {
     name: string;
     role?: string;
     bio?: string;
-    image: string | null;
+    image: SanityImage | null;
   } | null;
   categories: string[] | null;
   seo?: {
     metaTitle?: string;
     metaDescription?: string;
-    ogImage?: string;
+    ogImage?: SanityImage;
   };
 }
 
@@ -64,6 +67,12 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
   
+  const ogImageUrl = post.seo?.ogImage?.asset 
+    ? urlFor(post.seo.ogImage).width(1200).height(630).url() 
+    : post.featuredImage?.asset 
+      ? urlFor(post.featuredImage).width(1200).height(630).url() 
+      : undefined;
+
   return {
     title: post.seo?.metaTitle || `${post.title} | Best Cleaners Blog`,
     description: post.seo?.metaDescription || post.excerpt,
@@ -72,7 +81,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       description: post.seo?.metaDescription || post.excerpt,
       type: "article",
       publishedTime: post.publishedAt,
-      images: post.seo?.ogImage ? [{ url: post.seo.ogImage }] : post.featuredImage ? [{ url: urlFor(post.featuredImage).width(1200).height(630).url() }] : undefined,
+      images: ogImageUrl ? [{ url: ogImageUrl }] : undefined,
     },
   };
 }
@@ -97,7 +106,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     headline: post.title,
     description: post.excerpt,
     datePublished: post.publishedAt,
-    ...(post.featuredImage && {
+    ...(post.featuredImage?.asset && {
       image: urlFor(post.featuredImage).width(1200).height(630).url(),
     }),
     publisher: {
@@ -150,7 +159,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       {/* Featured Image */}
-      {post.featuredImage && (
+      {post.featuredImage?.asset && (
         <div className="relative h-64 md:h-96 bg-warm-cream">
           <Image
             src={urlFor(post.featuredImage).width(1200).height(600).url()}
@@ -171,7 +180,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           {/* Author/About */}
           <div className="mt-12 pt-8 border-t border-border">
             <div className="bg-warm-cream p-6 flex items-start gap-4">
-              {post.author?.image ? (
+              {post.author?.image?.asset ? (
                 <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
                   <Image
                     src={urlFor(post.author.image).width(128).height(128).url()}

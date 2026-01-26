@@ -78,12 +78,16 @@ export const blogPostBySlugQuery = groq`
     "slug": slug.current,
     excerpt,
     body,
-    "featuredImage": featuredImage.asset->url,
+    featuredImage,
     "featuredImageAlt": featuredImage.alt,
     publishedAt,
-    "author": author->{name, role, bio, "image": image.asset->url},
+    "author": author->{name, role, bio, image},
     "categories": categories[]->title,
-    seo
+    seo {
+      metaTitle,
+      metaDescription,
+      ogImage
+    }
   }
 `;
 
@@ -130,7 +134,11 @@ export const servicePageBySlugQuery = groq`
       question,
       answer
     },
-    seo
+    seo {
+      metaTitle,
+      metaDescription,
+      ogImage
+    }
   }
 `;
 
@@ -173,7 +181,11 @@ export const geoPageBySlugQuery = groq`
       "slug": slug.current,
       neighborhood
     },
-    seo
+    seo {
+      metaTitle,
+      metaDescription,
+      ogImage
+    }
   }
 `;
 
@@ -241,6 +253,10 @@ export const policyBySlugQuery = groq`
     "slug": slug.current,
     content,
     lastUpdated,
-    seo
+    seo {
+      metaTitle,
+      metaDescription,
+      ogImage
+    }
   }
 `;
