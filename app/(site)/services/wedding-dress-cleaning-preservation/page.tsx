@@ -107,19 +107,11 @@ export default function WeddingDressPage() {
               From wedding gowns to groomsmen attire, we help preserve the memories of your celebration.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="relative aspect-square overflow-hidden border border-border">
-              <Image
-                src="/images/GeneratedPhotosBC/bridelookingatweddingdress.jpeg"
-                alt="Happy couple on their wedding day"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
+          <div className="grid grid-cols-3 gap-4">
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
                 src="/images/GeneratedPhotosBC/weddingdresscleaning.jpeg"
-                alt="Groomsman in tuxedo"
+                alt="Wedding dress cleaning process"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -127,7 +119,7 @@ export default function WeddingDressPage() {
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
                 src="/images/GeneratedPhotosBC/weddingdresscleaning2.jpeg"
-                alt="Beautiful wedding venue"
+                alt="Professional wedding dress care"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -135,7 +127,7 @@ export default function WeddingDressPage() {
             <div className="relative aspect-square overflow-hidden border border-border">
               <Image
                 src="/images/GeneratedPhotosBC/weddingdresspreservation.jpeg"
-                alt="Elegant wedding table setting"
+                alt="Wedding dress preservation"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
               />
