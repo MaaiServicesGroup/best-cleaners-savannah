@@ -29,6 +29,11 @@ export const metadata: Metadata = {
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
+  icons: {
+    icon: "/images/Black and White BC Logo.png",
+    shortcut: "/images/Black and White BC Logo.png",
+    apple: "/images/Black and White BC Logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
