@@ -3,7 +3,7 @@ import { GeoPageContent } from "@/components/sections/GeoPageContent";
 
 export const metadata: Metadata = {
   title: "Dry Cleaners Victorian District Savannah | Best Cleaners",
-  description: "Quality dry cleaning for Victorian District Savannah residents. Expert garment care near Forsyth Park. Family-owned since 1910 with two convenient locations.",
+  description: "Quality dry cleaning for Victorian District Savannah residents. Expert garment care near Forsyth Park. Serving Savannah since 1910 with two convenient locations.",
 };
 
 const pageData = {

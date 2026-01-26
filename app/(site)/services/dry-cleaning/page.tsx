@@ -80,7 +80,7 @@ export default function DryCLeaningPage() {
                   damaged by water, including silk, wool, cashmere, and many synthetic blends.
                 </p>
                 <p>
-                  At Best Cleaners, we've perfected our dry cleaning process over four generations. 
+                  At Best Cleaners, we've perfected our dry cleaning process over more than a century. 
                   We combine traditional craftsmanship with modern, eco-friendly methods to deliver 
                   exceptional results that protect your garments and the environment.
                 </p>

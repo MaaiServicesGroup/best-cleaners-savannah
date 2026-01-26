@@ -83,8 +83,8 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <Hero
-        title="Experience the difference that generations of expertise makes."
-        description="Our family has been caring for Savannah's finest garments for generations."
+        title="Experience the difference that over a century of expertise makes."
+        description="Savannah's trusted choice for exceptional garment care since 1910."
         primaryCta={{
           text: "Find a Location",
           href: "/best-cleaners-savannah-locations/",

@@ -8,7 +8,7 @@ import { CTABanner } from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
   title: "About Best Cleaners & Laundry | Savannah's Heritage Dry Cleaner",
-  description: "Learn about Best Cleaners & Laundry's 110+ year history serving Savannah. Family-owned, community-focused, and committed to exceptional garment care since 1910.",
+  description: "Learn about Best Cleaners & Laundry's 110+ year history serving Savannah. A beloved community institution committed to exceptional garment care since 1910.",
 };
 
 const timeline = [
@@ -25,7 +25,7 @@ const timeline = [
   {
     year: "1960s",
     title: "Expansion & Growth",
-    description: "Second generation takes the helm, expanding services and opening our Abercorn location.",
+    description: "A new chapter begins with expanded services and the opening of our Abercorn location.",
   },
   {
     year: "1990s",
@@ -34,8 +34,8 @@ const timeline = [
   },
   {
     year: "2020s",
-    title: "Fourth Generation",
-    description: "Today, we blend a century of expertise with modern, eco-friendly practices for exceptional results.",
+    title: "The Modern Era",
+    description: "Today, we blend over a century of expertise with modern, eco-friendly practices for exceptional results.",
   },
 ];
 
@@ -83,7 +83,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About Best Cleaners & Laundry"
-        description="For over 110 years, our family has served Savannah with pride, professionalism, and a passion for exceptional garment care."
+        description="For over 110 years, Best Cleaners has served Savannah with pride, professionalism, and a passion for exceptional garment care."
         breadcrumb={[{ label: "About", href: "/best-cleaners-savannah/" }]}
       />
 
@@ -106,14 +106,14 @@ export default function AboutPage() {
                   garment care.
                 </p>
                 <p>
-                  Four generations later, we continue to serve the families, businesses, and 
-                  institutions that make Savannah special. We&apos;ve pressed suits for weddings, 
-                  preserved gowns for future generations, and cared for the everyday garments 
-                  that fill your closets.
+                  Over the decades, dedicated professionals have stewarded Best Cleaners through 
+                  changing times, always maintaining the standard of excellence that Savannah 
+                  expects. We&apos;ve pressed suits for weddings, preserved gowns for future 
+                  generations, and cared for the everyday garments that fill your closets.
                 </p>
                 <p>
                   Our longevity isn&apos;t just about surviving—it&apos;s about consistently delivering 
-                  quality that earns trust, generation after generation.
+                  quality that earns trust, decade after decade.
                 </p>
               </div>
               <div className="mt-8">
@@ -213,7 +213,7 @@ export default function AboutPage() {
 
       <CTABanner
         title="Experience the Best Difference"
-        description="Visit one of our two Savannah locations and see why families have trusted us for generations."
+        description="Visit one of our two Savannah locations and see why Savannah has trusted us for over a century."
         primaryCta={{
           text: "Find a Location",
           href: "/best-cleaners-savannah-locations/",

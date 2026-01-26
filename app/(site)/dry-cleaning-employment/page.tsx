@@ -24,8 +24,8 @@ const benefits = [
     description: "Many of our team members have built long careers with us, advancing into management roles.",
   },
   {
-    title: "Family Atmosphere",
-    description: "We're a family business that treats employees like family. Your wellbeing matters to us.",
+    title: "Team Atmosphere",
+    description: "We're a close-knit team that values every employee. Your wellbeing matters to us.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function EmploymentPage() {
               <div className="prose text-muted">
                 <p>
                   We&apos;re not just a dry cleaning business—we&apos;re a Savannah institution that has 
-                  served our community for over four generations. When you join our team, you become 
+                  served our community for over a century. When you join our team, you become 
                   part of that legacy.
                 </p>
                 <p>

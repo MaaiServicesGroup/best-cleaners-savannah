@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const reasons = [
   {
     title: "110+ Years of Experience",
-    description: "Four generations of expertise means we've seen it all. From vintage fabrics to modern materials, we know how to care for every garment.",
+    description: "Over a century of expertise means we've seen it all. From vintage fabrics to modern materials, we know how to care for every garment.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -70,7 +70,7 @@ const reasons = [
 
 const stats = [
   { value: "110+", label: "Years in Business" },
-  { value: "4", label: "Generations" },
+  { value: "1910", label: "Est." },
   { value: "250+", label: "5-Star Reviews" },
   { value: "2", label: "Locations" },
 ];
@@ -141,18 +141,18 @@ export default function WhyChooseUsPage() {
             </div>
             <div>
               <Heading as="h2" className="mb-6">
-                Trusted by Savannah Families for Generations
+                Trusted by Savannah for Over a Century
               </Heading>
               <div className="prose text-muted">
                 <p>
-                  When your grandmother brought her Sunday best to Best Cleaners in the 1950s, 
-                  she expected quality and care. Today, her grandchildren bring their garments 
+                  When Savannah residents brought their Sunday best to Best Cleaners in the 1950s, 
+                  they expected quality and care. Today, their grandchildren bring their garments 
                   to us with the same expectations—and we deliver.
                 </p>
                 <p>
                   That kind of trust isn&apos;t built overnight. It&apos;s earned through consistent 
                   quality, honest service, and a genuine commitment to treating every customer 
-                  like family.
+                  with care.
                 </p>
                 <p>
                   We&apos;ve cleaned wedding dresses that have been passed down through generations. 

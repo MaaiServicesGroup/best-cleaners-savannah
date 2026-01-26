@@ -193,7 +193,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   {post.author?.role || "Savannah's Trusted Dry Cleaners Since 1910"}
                 </p>
                 <p className="text-sm text-muted">
-                  {post.author?.bio || "For over 110 years, we've been providing expert garment care to Savannah families. Our blog shares the knowledge we've accumulated over four generations."}
+                  {post.author?.bio || "For over 110 years, we've been providing expert garment care to Savannah families. Our blog shares the knowledge we've accumulated over more than a century."}
                 </p>
               </div>
             </div>

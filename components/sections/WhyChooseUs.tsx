@@ -6,7 +6,7 @@ const reasons = [
   {
     number: "110+",
     label: "Years of Service",
-    description: "Serving Savannah since 1910, we've built our reputation on quality and trust across generations.",
+    description: "Serving Savannah since 1910, we've built our reputation on quality and trust decade after decade.",
   },
   {
     number: "2",
@@ -43,7 +43,7 @@ export function WhyChooseUs() {
               to deliver the finest dry cleaning and laundry services in Savannah.
             </Subheading>
             <p className="text-muted leading-relaxed mb-8">
-              Our family has been caring for Savannah&apos;s finest garments for over four generations. 
+              Best Cleaners has been caring for Savannah&apos;s finest garments for over a century. 
               We understand that every piece of clothing tells a story—whether it&apos;s a cherished 
               wedding dress, a trusted work suit, or your favorite everyday shirt. That&apos;s why we 
               treat every garment with the respect and attention it deserves.
