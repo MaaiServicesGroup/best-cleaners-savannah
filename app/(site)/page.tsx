@@ -95,7 +95,7 @@ export default function HomePage() {
         }}
         showBadge={true}
         variant="home"
-        backgroundImage="/images/collection-Best-Cleaners-zYxuPC2-xFU/dry cleaned suits.jpg"
+        backgroundImage="/images/AnimatedHeroImage.jpeg"
       />
 
       {/* Same-Day Service Banner */}
